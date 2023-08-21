@@ -122,10 +122,6 @@ body {
     margin-top: 34px;
 }
 
-.right-content .btn-block .top p:hover{
-    background: var(--white, #eeb7046f);
-}
-
 .right-content .btn-block .center{
     display: flex;
     justify-content: center;
@@ -245,7 +241,8 @@ body {
 }
 
 .work .information-works .info .rectangle,
-.work .information-works .info .info-text {
+.work .information-works .info .info-text,
+.work .information-works .info .info-text h3{
     transition: 0.5s ease; 
 }
 
@@ -256,6 +253,10 @@ body {
 
 .work .information-works .info:hover .info-text {
     transform: translateY(-40px);
+}
+
+.work .information-works .info:hover .info-text h3{
+    font-size: 22px;
 }
 
 .work .information-works .rectangle{
