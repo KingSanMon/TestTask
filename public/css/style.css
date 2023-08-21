@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background: url(../image/Decore3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4%;
+}
+
+.header .logo {
+    background: url(../image/logo.png);
+    width: 264px;
+    height: 67px;
+}
+
+.header .navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+.header .navbar .navigation{
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar .navigation a{
+    color: black;
+   margin-right: 3rem;
+}
+
+.header .navbar .number-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 197px;
+    height: 35px;
+    border: 1px solid #131311;
+    border-radius: 10px;
+    color: black;
+    margin: 0 7rem 0 2rem;
+}
