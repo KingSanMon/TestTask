@@ -24,6 +24,12 @@ body {
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Хедер */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -64,6 +70,8 @@ body {
     color: black;
     margin: 0 7rem 0 2rem;
 }
+
+/* Верхний блок после хедера */
 
 .about{
     display: flex;
@@ -200,16 +208,16 @@ body {
     background: var(--white, #eeb7046f);
 }
 
-
+/* Блок (Как это работает) */
 
 .work{
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 9.5rem;
 }
 
 .work .title{
+    text-align: center;
     font-size: 42px;
 }
 
@@ -293,3 +301,177 @@ body {
     font-size: 16px;
 }
 
+/* Блок с сертификатом (Вид сертификата, который вы получите....) */
+
+.certificate{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 17.19rem;
+}
+
+.certificate .left h1{
+    font-size: 2.625rem;
+}
+
+.certificate .left .decoration, 
+.certificate .left .nominal, 
+.certificate .left .usage{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.certificate .left .info-text{
+    margin-left: 1.31rem;
+}
+
+.certificate .left .info-text h3{
+    color: rgba(14, 14, 15, 0.64);
+    font-size: 1rem;
+}
+
+.certificate .left .info-text p{
+    color: rgba(14, 14, 15, 0.64);
+    font-size: 1rem;
+}
+
+.certificate .right{
+    padding: 2.75rem 0rem 0rem 2rem;
+    width: 27.25rem;
+    height: 29.5rem;
+    border-radius: 1.625rem;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.certificate .right img{
+    margin-top: 2.25rem;
+}
+
+.certificate .right p{
+    font-size: 1rem;
+    color: rgba(10, 10, 13, 0.64);
+}
+
+.conditions{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 11.81rem;
+}
+
+.conditions .left h1{
+    font-size: 2.625rem;
+}
+
+.conditions .left p{
+    font-size: 1rem;
+    color: rgba(11, 11, 12, 0.64);
+}
+
+.conditions .right{
+    padding: 0.69rem 0rem 0rem 2rem;
+    width: 31.5rem;
+    height: 15.3125rem;
+    border-radius: 0.625rem;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.conditions .right p{
+    font-size: 1rem;
+    color: rgba(11, 11, 12, 0.64);
+    line-height: 2.2rem;
+}
+
+.conditions .right p span{
+    font-weight: 600;
+}
+
+/* Блока почему мы */
+
+.why-we{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17.44rem;
+}
+
+.why-we h1{
+    font-size: 2.625rem;
+}
+
+.why-we .blocks{
+    display: flex;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.why-we .blocks .wimg{
+    overflow: hidden;
+    width: 19.625rem;
+    height: 24rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.why-we .blocks .wimg img{
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+    height: 17rem;
+    transition: transform 0.3s ease;
+}
+
+.why-we .blocks .wimg img:hover{
+    transform: scale(1.2);
+}
+
+.why-we .blocks .wimg .info{
+    position: relative;
+    padding: 1rem 0 0 0;
+    height: 100%;
+    background: white;
+    top: -7px;
+}
+
+.why-we .blocks .wimg p{
+    font-size: 1.125rem;
+    color: rgba(11, 11, 12, 0.64);
+    margin: 0 0 0 1rem;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;  
+    height: 65rem;
+    background: url(../image/Decore.png);
+    background-size: 100% auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .navbar{
+    display: flex;
+    align-items: center;
+    margin-top: 33.5rem;
+    margin-left: 30rem;
+    gap: 2rem;
+}
+
+.footer .navbar a{
+    color: #131311;
+}
+
+.footer .navbar .number-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.33331rem;
+    height: 2.22931rem;
+    border-radius: 0.625rem;
+    border: 1px solid #131311;
+}
