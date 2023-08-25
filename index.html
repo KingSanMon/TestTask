@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/adeptiv.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <title>Kitchen</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="left-content">
                 <h1>
                     Электронные<br>
@@ -58,10 +59,10 @@
                     </div>
                     <div class="bottom">
                         <div class="send">
-                            <a href="#" class="btn-me active" id="btn-me">Отправить себе</a>
+                            <a href="#about" class="btn-me active" id="btn-me">Отправить себе</a>
                         </div>
                         <div class="send-gift">
-                            <a href="#" class="btn frame" id="btn">Отправить в подарок</a>
+                            <a href="#about" class="btn frame" id="btn">Отправить в подарок</a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +222,6 @@
             </div>
         </nav>
     </footer>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="public/js/change.js"></script>
     <script src="public/js/script.js"></script>
     <script src="public/js/color.js"></script>
