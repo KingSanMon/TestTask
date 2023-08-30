@@ -1,12 +1,15 @@
-$("#btn").click(function(){
-    // сносим две секции
-    $("#work").css("display", "none");
-    $("#certificate").css("display", "none");
+$(document).on("click","#btn", function(){
 
-    // изменяем кнопки
-    $("#btn-me").text("Отправить и оплатить");
-    $("#btn").text("Вернуться назад");
+    if ($(this).attr("id") === "btn"){
+         // сносим две секции
+        $("#work").css("display", "none");
+        $("#certificate").css("display", "none");
 
-    // добавляем новый блок
-    $("#letter").css("display", "block");
+        // изменяем кнопки
+        $("#btn-me").text("Отправить и оплатить");
+        $("#btn").text("Вернуться назад");
+
+        // добавляем новый блок
+        $("#letter").css("display", "block");
+    }
 });
