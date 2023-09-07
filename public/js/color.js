@@ -1,18 +1,12 @@
-const blocks = [one, three, five];
+document.querySelectorAll('.toggle-nominal').forEach((item) => {
+  item.addEventListener('click', (event) => {
 
-blocks.forEach(block => {
-  block.addEventListener("click", toggleColor);
-});
+    const dataValue = item.getAttribute("data-nominal");
+  
+    if (document.querySelector('.toggle-nominal.active') != null) {
+      document.querySelector('.toggle-nominal.active').classList.remove('active');
+    }
 
-let activeBlock = null;
-
-function toggleColor(event) {
-  const target = event.target;
-
-  if (activeBlock) {
-    activeBlock.style.backgroundColor = "rgb(255 255 255)";
-  }
-
-  target.style.backgroundColor = "#F1A501";
-  activeBlock = target;
-}
+    item.classList.add('active');
+  })
+})
