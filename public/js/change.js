@@ -1,57 +1,31 @@
-$(document).on("click","#btn-me", function(){
-    // Вызывает код при нажатии на кнопку отправить себе
+let choice = document.getElementById("btn-me")
+let choiceGift = document.getElementById("btn")
 
-    $("#top").css("display", "none");
 
-    $("#nominal-input").replaceWith(function(){
-        return $("<p id='onetown' />").text("1000");
-    });
+// Кнопка отправить себе
+function changeButtonMe(text, className){
+   choice.innerHTML = text;
+   choice.classList.add(className)
 
-    $("#btn-me").text("Отправить и оплатить");
-    $("#btn-me").attr("id", "btn-me-new");
+}
 
-    $("#btn").text("Вернуться назад");
-    $("#btn").attr("id", "load-btn");
+function changeButtonGift(text, className){
+    choiceGift.innerHTML = text;
+    choiceGift.classList.add(className);
+}
 
-    $("#center").css("margin", "0");
+// при клике на отправить себе
+choice.addEventListener('click', (event) => {
 
-    $("#btn-block").css("padding", "1.80rem 2.89rem 0rem");
+    // вызов функций на изменение кнопки
+    changeButtonMe("Отправить и опратить", "send-btn");
+    changeButtonGift("Вернуться назад", "back-btn");
+});
 
-    $("#center").after("<div class='new-center'><p>Итого: <span id='result'>1000</span></p><div class='email'><input type='email' placeholder='Введите ваш email'>");
+choiceGift.addEventListener('click', (event) => {
 
-    $(".bottom").css("margin-top", "1.44rem");
-
-    var result = parseInt($("#result").text());
-    var number = parseInt($("#number").text());
-
-    function ymno(a, b){
-        return(a*b);
+    if (event.target.classList.contains("back-btn")) {
+        changeButtonMe("Отправить себе");
+        changeButtonGift("Отправить в подарок");
     }
-
-    $("#result").text(ymno(result, number));
-
-    $("#plus").click(function(){
-        var newNumber = ++number;
-
-        $("#result").text(ymno(result, newNumber))
-    });
-
-    $("#load-btn").click(function(){
-        // Кнопка вернутся 
-
-        $("#btn-me-new").attr("id", "btn-me");
-        $("#load-btn").attr("id", "btn");
-        $("#top").css("display", "flex");
-        $("#btn-block").css("padding", "0");
-        $("#center").css("margin", "2.58rem 0 2.59rem 0");
-
-        $("#onetown").replaceWith(function(){
-            return $("<input type='text' placeholder='Введите номинал' id='nominal-input'>");
-        });
-        
-        $("#btn-me").text("Отправить себе");
-        $("#btn").text("Отправить в подарок");
-
-        $(".new-center").remove()
-    });
 });
