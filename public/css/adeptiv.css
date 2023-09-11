@@ -1,65 +1,33 @@
 @media only screen and (max-width: 1442px) {
-    .header{
-        gap: 8rem;
+
+    .header 
+    {
+        padding: 2rem 1%;
+    }
+
+    .navigation a
+    {
+        margin: 0 12px 0 0;
     }
 }
 
-@media only screen and (max-width: 1425px) {
-    .header{
-        gap: 7rem;
-    }
-}
+@media only screen and (max-width: 1244px) {
 
-@media only screen and (max-width: 1407px) {
-    .header{
-        gap: 6rem;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-
-    /* body{
-        background-size: 108%;
-    } */
-
-    .header{
-        padding: 1rem 0rem 0rem 0rem;
-        gap: 6rem;
+    .navbar .number-phone
+    {
+        width: 146px;
+        font-size: 13px;
+        margin: 0px 2rem 0 2rem;
     }
 
-    .header .logo{
-        width: 221px;
-        height: 56px;
-        background-size: 100% auto;
+    .header .logo
+    {
+        width: 200px;
+        height: 50px;
     }
 
-    .header .navbar{
-        gap: 1rem;
-    }
-
-    .header .navbar .navigation{
-        gap: 1rem;    
-    }
-
-    .header .navbar .navigation a{
-        margin: 0;
-        font-size: 15px;
-    }
-
-    .header .navbar .number-phone{
-        margin: 0;
-    }
-
-    .about{
-        gap: 0;
-        justify-content: space-evenly;
-    }
-
-    .about .left-content h1{
-        font-size: 44px;
-    }
-
-    .about .left-content p{
-        font-size: 10px;
+    .navigation a
+    {
+        font-size: 13px;
     }
 }

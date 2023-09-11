@@ -1,31 +1,19 @@
-let choice = document.getElementById("btn-me")
-let choiceGift = document.getElementById("btn")
+const choice = document.getElementById("btn-me");
+const choiceGift = document.getElementById("btn");
 
-
-// Кнопка отправить себе
-function changeButtonMe(text, className){
-   choice.innerHTML = text;
-   choice.classList.add(className)
-
+function changeButton(element, text, className) {
+  element.innerHTML = text;
+  element.classList.add(className);
 }
 
-function changeButtonGift(text, className){
-    choiceGift.innerHTML = text;
-    choiceGift.classList.add(className);
-}
-
-// при клике на отправить себе
-choice.addEventListener('click', (event) => {
-
-    // вызов функций на изменение кнопки
-    changeButtonMe("Отправить и опратить", "send-btn");
-    changeButtonGift("Вернуться назад", "back-btn");
+choice.addEventListener('click', () => {
+  changeButton(choice, "Отправить и опратить", "send-btn");
+  changeButton(choiceGift, "Вернуться назад", "back-btn");
 });
 
 choiceGift.addEventListener('click', (event) => {
-
-    if (event.target.classList.contains("back-btn")) {
-        changeButtonMe("Отправить себе");
-        changeButtonGift("Отправить в подарок");
-    }
+  if (event.target.classList.contains("back-btn")) {
+    changeButton(choice, "Отправить себе");
+    changeButton(choiceGift, "Отправить в подарок");
+  }
 });
