@@ -1,4 +1,5 @@
-@media only screen and (max-width: 1442px) {
+@media only screen and (max-width: 1442px) 
+{
 
     .header 
     {
@@ -11,7 +12,13 @@
     }
 }
 
-@media only screen and (max-width: 1244px) {
+@media only screen and (max-width: 1244px) 
+{
+
+    .about
+    {
+        gap: 100px;
+    }
 
     .navbar .number-phone
     {
@@ -30,4 +37,100 @@
     {
         font-size: 13px;
     }
+}
+
+@media only screen and (max-width: 1088px)
+{
+
+    .about
+    {
+        gap: 35px;
+    }
+
+    .left-content
+    {
+        width: 442px;
+    }
+
+    .left-content h1
+    {
+        font-size: 55px;
+    }
+
+    .left-content p 
+    {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 989px)
+{
+
+    .left-content
+    {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .left-content .condition
+    {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 960px)
+{
+
+    .header .logo 
+    {
+        width: 153px;
+        height: 38px;
+    }
+
+}
+
+@media only screen and (max-width: 912px)
+{
+
+    .navbar .number-phone
+    {
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 848px)
+{
+
+    .navigation a 
+    {
+        font-size: 11px;
+    }
+
+    .navbar .number-phone
+    {
+        font-size: 11px;
+        width: 110px;
+    }
+    
+}
+
+@media only screen and (max-width: 769px)
+{
+
+    .navigation a 
+    {
+        font-size: 10px;
+    }
+
+    .navbar .number-phone
+    {
+        font-size: 10px;
+        width: 100px;
+        height: 28px;
+    }
+    
 }

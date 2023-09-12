@@ -46,17 +46,17 @@ body::-webkit-scrollbar {
     height: 67px;
 }
 
-.header .navbar{
+.navbar{
     display: flex;
     flex-direction: row;
 }
 
-.header .navbar .navigation{
+.navbar .navigation, .navbar .navigation__footer{
     display: flex;
     align-items: center;
 }
 
-.navigation a{
+.navigation a, .navigation__footer a{
     color: black;
     margin: 0 46px 0 0;
 }
@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
     gap: 15rem;
 }
 
-.about .left-content h1{
+.left-content h1{
     position: relative;
     top: -20px;
     font-size: 65px;
@@ -90,7 +90,7 @@ body::-webkit-scrollbar {
 
 .left-content 
 {
-    width: auto;
+    width: 475px;
 }
 
 .left-content .condition {
@@ -557,20 +557,17 @@ body::-webkit-scrollbar {
 
 .footer{
     width: 100%;  
-    height: 65rem;
+    height: 40rem;
     background: url(../image/Decore.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom;
-}
-
-.footer{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.footer .navbar{
+/* .footer .navbar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -579,6 +576,7 @@ body::-webkit-scrollbar {
 }
 
 .footer .navbar a{
+    margin: 0 15px 0 0;
     color: #131311;
 }
 
@@ -590,4 +588,4 @@ body::-webkit-scrollbar {
     height: 2.22931rem;
     border-radius: 0.625rem;
     border: 1px solid #131311;
-}
+} */
