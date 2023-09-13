@@ -46,22 +46,33 @@ body::-webkit-scrollbar {
     height: 67px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
 }
 
-.navbar .navigation, .navbar .navigation__footer{
+.button-open
+{
+    width: 40px;
+}
+
+.nav-button
+{
+    background: transparent;
+    display: none;
+}
+
+.navigation {
     display: flex;
     align-items: center;
 }
 
-.navigation a, .navigation__footer a{
+.navigation a {
     color: black;
     margin: 0 46px 0 0;
 }
 
-.navbar .number-phone{
+.navbar .number-phone {
     display: flex;
     justify-content: center;
     align-items: center;
