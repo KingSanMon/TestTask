@@ -437,9 +437,7 @@ body::-webkit-scrollbar {
     font-size: 2.625rem;
 }
 
-.certificate .left .decoration, 
-.certificate .left .nominal, 
-.certificate .left .usage{
+.quick-registration {
     display: flex;
     align-items: center;
     margin-top: 2.5rem;
@@ -460,7 +458,7 @@ body::-webkit-scrollbar {
 }
 
 .certificate .right{
-    padding: 2.75rem 0rem 0rem 2rem;
+    padding: 25px;
     width: 27.25rem;
     height: 29.5rem;
     border-radius: 1.625rem;
