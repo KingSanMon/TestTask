@@ -137,6 +137,14 @@
 @media only screen and (max-width: 718px)
 {
 
+    .navbar .number-phone {
+        border-inline-width: 7px;
+        font-weight: 500;
+        font-size: 14px;
+        width: 220px;
+        height: 34px;
+    }
+
     .navigation
     {
         display: none;
@@ -262,6 +270,54 @@
     .conditions .left
     {
         width: 413px;
+    }
+
+}
+
+@media only screen and (max-width: 440px)
+{
+
+    .about, .img__preview, .certificate, .image__certificate, .conditions, .why-we
+    {
+        width: 320px;
+    }
+    
+    .right-content .btn-block
+    {
+        width: 320px;
+        height: 450px;
+    }
+
+    .work
+    {
+        width: 320px;
+        padding: 40px 0 0 0;
+        margin: 0;
+    }
+
+    .certificate .right
+    {
+        width: 320px;
+        height: 373px;
+        padding: 0;
+    }
+
+    .conditions .right
+    {
+        width: 300px;
+        height: 277px;
+        padding: 14px;
+    }
+
+    .work .decore-rectangle
+    {
+        display: none;
+    }
+
+    .header .logo 
+    {
+        width: 100px;
+        height: 24px;
     }
 
 }
