@@ -9,6 +9,7 @@ function changeButton(element, text, className) {
 choice.addEventListener('click', () => {
   changeButton(choice, "Отправить и опратить", "send-btn");
   changeButton(choiceGift, "Вернуться назад", "back-btn");
+
 });
 
 choiceGift.addEventListener('click', (event) => {
