@@ -8,5 +8,7 @@ document.querySelectorAll('.toggle-nominal').forEach((item) => {
     }
 
     item.classList.add('active');
+
+    
   })
 })
