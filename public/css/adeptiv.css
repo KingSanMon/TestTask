@@ -226,8 +226,17 @@
     .right-content .btn-block
     {
         width: 435px;
-        height: 235px;
+        height: 400px;
         border-radius: 8px;
+    }
+
+    .counting{
+        justify-content: center;
+    }
+    
+    .data-toggle
+    {
+        margin-bottom: 25px;
     }
 
     .certificate

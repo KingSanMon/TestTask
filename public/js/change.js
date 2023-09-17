@@ -1,5 +1,10 @@
 const choice = document.getElementById("btn-me");
 const choiceGift = document.getElementById("btn");
+const topBlock = document.getElementById("top");
+const centerBlock = document.getElementById("center");
+const send_pay = document.getElementById('send_pay');
+
+const all_block = [topBlock, centerBlock];
 
 function changeButton(element, text, className) {
   element.innerHTML = text;
@@ -7,8 +12,22 @@ function changeButton(element, text, className) {
 }
 
 choice.addEventListener('click', () => {
-  changeButton(choice, "Отправить и опратить", "send-btn");
-  changeButton(choiceGift, "Вернуться назад", "back-btn");
+
+  if (document.querySelector('.toggle-nominal.active') == null){
+
+    alert("Выберите сначала сумму сертификата");
+    
+  } else {
+
+    changeButton(choice, "Отправить и опратить", "send-btn");
+    changeButton(choiceGift, "Вернуться назад", "back-btn");
+  
+    all_block.forEach((element) => {
+    element.style.display = 'none';
+  });
+    send_pay.style.display = 'flex';
+
+  }
 
 });
 
@@ -16,5 +35,10 @@ choiceGift.addEventListener('click', (event) => {
   if (event.target.classList.contains("back-btn")) {
     changeButton(choice, "Отправить себе");
     changeButton(choiceGift, "Отправить в подарок");
+
+    all_block.forEach((element) => {
+      element.style.display = 'flex';
+    });
+    send_pay.style.display = 'none';
   }
 });

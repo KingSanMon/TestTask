@@ -129,6 +129,7 @@ body::-webkit-scrollbar {
 }
 
 .right-content .btn-block{
+    padding: 24px 43px 30px 43px;
     margin-top: 40px;
     width: 512px;
     height: 254px;
@@ -151,7 +152,6 @@ body::-webkit-scrollbar {
     height: 36px;
     border-radius: 10px;
     border: 1px solid #131311;
-    margin-top: 34px;
     background: white;
 }
 
@@ -175,13 +175,13 @@ body::-webkit-scrollbar {
     margin-top: 1.44rem;
 }
 
-.right-content .btn-block .center .quantity{
+.quantity{
     display: flex;
     justify-content: space-between;
     padding: 0 0 0 20px;
 }
 
-.right-content .btn-block .center .quantity .quantity-gift{
+.quantity-gift{
     display: flex;
     padding: 0 15px 0 0;
 }
@@ -246,7 +246,7 @@ body::-webkit-scrollbar {
 
 .frame{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 2px 7px 2px 7px;
     width: 200px;
@@ -254,6 +254,52 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     border: 1px solid #131311;
     color: #131311;
+}
+
+.data-toggle
+{
+    display: flex;
+    width: 200px;
+    height: 36px;
+    border: 1px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity_amoun
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.counting
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.send_pay
+{
+    display: none;
+}
+
+.email__send_pay
+{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    width: 100%;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid #131311;
+}
+
+.total
+{
+    margin: 10px 0 10px 0;
 }
 
 .right-content

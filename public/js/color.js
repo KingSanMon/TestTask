@@ -1,3 +1,7 @@
+const result = document.querySelector('#result');
+const total = document.querySelector('#total');
+let summ_payment;
+
 document.querySelectorAll('.toggle-nominal').forEach((item) => {
   item.addEventListener('click', (event) => {
 
@@ -10,5 +14,8 @@ document.querySelectorAll('.toggle-nominal').forEach((item) => {
     }
 
     item.classList.add('active');
+
+    result.textContent = dataValue;
+    total.textContent = summ_payment;
   })
 })
