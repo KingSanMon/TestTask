@@ -171,10 +171,6 @@ body::-webkit-scrollbar {
     margin-top: 20px;
 }
 
-.right-content .btn-block .new-center .email{
-    margin-top: 1.44rem;
-}
-
 .quantity{
     display: flex;
     justify-content: space-between;
@@ -186,11 +182,6 @@ body::-webkit-scrollbar {
     padding: 0 15px 0 0;
 }
 
-.right-content
-.btn-block
-.center
-.quantity
-.quantity-gift
 .number{
     margin: 0 6px 0 6px;
 }
@@ -203,15 +194,6 @@ body::-webkit-scrollbar {
     border-radius: 36px;
     background: var(--white, #FFF);
     box-shadow: 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
-}
-
-.email{
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    height: 2.25rem;
-    border-radius: 0.625rem;
-    border: 1px solid #131311;
 }
 
 .btn-block-update .top .quantity{
@@ -284,6 +266,11 @@ body::-webkit-scrollbar {
 .send_pay
 {
     display: none;
+}
+
+.email 
+{
+    width: 100%;
 }
 
 .email__send_pay

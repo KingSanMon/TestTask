@@ -17,13 +17,16 @@ minus.addEventListener("click", function(){
     number.textContent = num;
 });
 
-const plus3 = document.getElementById("plus3");
+const plus1 = document.getElementById("plus1");
 const minus1 = document.getElementById("minus1");
-const number2 = document.getElementById("number2");
+const number1 = document.getElementById("number1");
 
-plus3.addEventListener("click", function(){
+plus1.addEventListener("click", function(){
+
     num++;
-    number2.textContent = num;
+    number1.textContent = num;
+
+    total.textContent = resultNumber * num;
 });
 
 minus1.addEventListener("click", function(){
@@ -31,5 +34,7 @@ minus1.addEventListener("click", function(){
     if (num < 1) {
         num = 1;
     }
-    number2.textContent = num;
+    total.textContent = resultNumber * num;
+
+    number1.textContent = num;
 });

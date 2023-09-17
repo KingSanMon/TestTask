@@ -1,14 +1,14 @@
 const result = document.querySelector('#result');
 const total = document.querySelector('#total');
-let summ_payment;
+
+let dataValueContent;
 
 document.querySelectorAll('.toggle-nominal').forEach((item) => {
   item.addEventListener('click', (event) => {
 
     const dataValue = item.getAttribute("data-nominal");
-    const summ_payment = dataValue*num;
-    console.log(summ_payment);
-  
+    dataValueContent = dataValue;
+    
     if (document.querySelector('.toggle-nominal.active') != null) {
       document.querySelector('.toggle-nominal.active').classList.remove('active');
     }
@@ -16,6 +16,5 @@ document.querySelectorAll('.toggle-nominal').forEach((item) => {
     item.classList.add('active');
 
     result.textContent = dataValue;
-    total.textContent = summ_payment;
   })
 })
