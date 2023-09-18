@@ -155,6 +155,11 @@ body::-webkit-scrollbar {
     background: white;
 }
 
+.toggle-nominal:hover
+{
+    background: #00ee43;
+}
+
 .toggle-nominal.active{
     background-color: #F1A501;
     color: #131311;

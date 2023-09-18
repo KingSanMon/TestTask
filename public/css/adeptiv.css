@@ -177,7 +177,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #fdffd3;
+        background-color: #ffffff;
         z-index: 3;
     }
 
@@ -328,6 +328,11 @@
     {
         width: 100px;
         height: 24px;
+    }
+
+    .top .toggle-nominal
+    {
+        width: 85%;
     }
 
 }

@@ -12,6 +12,17 @@ function changeButton(element, text, className) {
   element.classList.add(className);
 }
 
+function deleteClass(element, text, className) {
+  element.innerHTML = text;
+  element.classList.remove(className);
+}
+
+choiceGift.addEventListener('click', () => {
+
+  // changeButton(choiceGift, "Вернуться назад");
+
+});
+
 choice.addEventListener('click', () => {
 
   if (document.querySelector('.toggle-nominal.active') == null){
@@ -45,8 +56,8 @@ choiceGift.addEventListener('click', (event) => {
 
     number.textContent = num;
 
-    changeButton(choice, "Отправить себе");
-    changeButton(choiceGift, "Отправить в подарок");
+    deleteClass(choice, "Отправить себе", "send-btn");
+    deleteClass(choiceGift, "Отправить в подарок", "back-btn");
 
     all_block.forEach((element) => {
       element.style.display = 'flex';
