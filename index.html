@@ -90,23 +90,76 @@
                             <a href="#right-content__about" class="btn-me active" id="btn-me">Отправить себе</a>
                         </div>
                         <div class="send-gift">
-                            <a href="#right-content__about" class="btn frame" id="btn">Отправить в подарок</a>
+                            <a href="#right-content__about" class="btn frame send-gift-btn" id="btn">Отправить в подарок</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="letter" id="letter">
-            <div class="left">
+            <div class="letter_preview">
                 <h1>Предосмотр письма:</h1>
                 <div class="preview">
                     <p>Дорогой <span>Иван!<span></p>
                     <p>Поздравляем с юбилеем:</p>
-                    <img src="public/image/sertificat.png" alt="">
+                    <div class="img__sertificate">
+                        <img src="public/image/sertificat.png" alt="">
+                    </div>
                     <div class="alips"></div>
                 </div>
             </div>
-            <div class="right"></div>
+            <div class="information_user">
+                <div class="contacting_recipient block_frame">
+                    <p>Обращение к получателю:</p>
+                    <input type="text" placeholder="Дорогой Иван">
+                </div>
+                <div class="email_recipient block_frame">
+                    <p>email получателя:</p>
+                    <input type="email" placeholder="demo@demo.ru">
+                </div>
+                <div class="my_email block_frame">
+                    <p>ваш email *:</p>
+                    <input type="email" placeholder="demo@demo.ru">
+                </div>
+                <p>
+                    *На ваш email будет отправлено письмо о статусе отправки сертификата
+                </p>
+                <div class="text-letter">
+                    <p>текст письма:</p>
+                    <input type="text" placeholder="Поздравляем с юбилеем!">
+                </div>
+                <div class="send_pay_tw" id="send_pay_tw">
+                    <div class="quantity_amoun">
+                        <div class="counting">
+                            <div class="data-toggle">
+                                <p id="result"></p>
+                            </div>
+                            <div class="quantity frame">
+                                <p>количество</p>
+                                <div class="quantity-gift">
+                                    <p class="minus" id="minus1" name="minus">-</p>
+                                    <p class="number" id="number1" name="number">1</p>
+                                    <p class="plus" id="plus1" name="plus">+</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result_total">
+                            <p class="total">Итого: <span id="total"></span></p>
+                        </div>
+                        <div class="email__send_pay">
+                            <input type="email" class="email" placeholder="Введите ваш email">
+                        </div>
+                    </div>
+                    <div class="btn-send-gift">
+                        <div class="send">
+                            <a href="#right-content__about" class="active" id="btn-me">Отправить и оплатить</a>
+                        </div>
+                        <div class="send-gift">
+                            <a href="#right-content__about" class="frame" id="btn">Вернутся назад</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="work" id="work">
             <h1 class="title">Как это работает?</h1>

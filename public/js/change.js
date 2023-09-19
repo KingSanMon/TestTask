@@ -3,6 +3,7 @@ const choiceGift = document.getElementById("btn");
 const topBlock = document.getElementById("top");
 const centerBlock = document.getElementById("center");
 const send_pay = document.getElementById('send_pay');
+const send_gift_btn = document.querySelector('.send-gift-btn');
 let resultNumber;
 
 const all_block = [topBlock, centerBlock];
@@ -17,11 +18,16 @@ function deleteClass(element, text, className) {
   element.classList.remove(className);
 }
 
-choiceGift.addEventListener('click', () => {
-
-  // changeButton(choiceGift, "Вернуться назад");
-
-});
+send_gift_btn.addEventListener('click', () => {
+  if (send_gift_btn.classList.contains('send-gift-btn')) {
+      document.querySelector('.letter').style.display = 'flex';
+      document.querySelector('.send_pay_tw').style.display = 'flex';
+      document.querySelector('.btn-block').style.display = 'none';
+      document.querySelector('.condition').style.display = 'none';
+  } else {
+      
+  }
+})
 
 choice.addEventListener('click', () => {
 
@@ -41,6 +47,8 @@ choice.addEventListener('click', () => {
 
     changeButton(choice, "Отправить и опратить", "send-btn");
     changeButton(choiceGift, "Вернуться назад", "back-btn");
+
+    choiceGift.classList.remove('send-gift-btn');
   
     all_block.forEach((element) => {
     element.style.display = 'none';
@@ -58,6 +66,8 @@ choiceGift.addEventListener('click', (event) => {
 
     deleteClass(choice, "Отправить себе", "send-btn");
     deleteClass(choiceGift, "Отправить в подарок", "back-btn");
+
+    choiceGift.classList.add('send-gift-btn');
 
     all_block.forEach((element) => {
       element.style.display = 'flex';
