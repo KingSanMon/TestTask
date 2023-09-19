@@ -37,6 +37,8 @@ send_gift_btn.addEventListener('click', () => {
       document.querySelector('.send_pay_tw').style.display = 'flex';
       document.querySelector('.btn-block').style.display = 'none';
       document.querySelector('.condition').style.display = 'none';
+      document.querySelector('.work').style.display= 'none';
+      document.querySelector('.certificate').style.display= 'none';
     }
   } else {
       
@@ -48,6 +50,8 @@ document.getElementById('btn-back').addEventListener('click', () => {
   document.querySelector('.send_pay_tw').style.display = 'none';
   document.querySelector('.btn-block').style.display = 'flex';
   document.querySelector('.condition').style.display = 'block';
+  document.querySelector('.work').style.display= 'flex';
+  document.querySelector('.certificate').style.display= 'flex';
   document.querySelector('.send_pay').style.width = '100%'
 });
 

@@ -37,6 +37,13 @@
     {
         font-size: 13px;
     }
+
+    .letter
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
 }
 
 @media only screen and (max-width: 1088px)
@@ -184,6 +191,23 @@
     .navigation a 
     {
         font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 550px)
+{
+
+    .letter_preview .preview
+    {
+        width: 440px;
+        height: 523px;
+    }
+
+    .img__sertificate img
+    {
+        width: 385px;
+        height: 260px;
     }
 
 }

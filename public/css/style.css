@@ -360,7 +360,7 @@ body::-webkit-scrollbar {
     margin-bottom: 0.81rem;
 }
 
-.letter .letter_preview .preview{
+.letter_preview .preview{
     padding: 4.17rem 1.69rem 4.06rem 1.75rem;
     width: 34.847rem;
     height: 37.72425rem;
@@ -375,7 +375,7 @@ body::-webkit-scrollbar {
     margin-bottom: 2.88rem;
 }
 
-.letter .letter_preview .preview img{
+.img__sertificate img{
     width: 30.93069rem;
     height: 20.22081rem;
     border: 1px solid #E9F5FB;
