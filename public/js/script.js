@@ -38,3 +38,25 @@ minus1.addEventListener("click", function(){
 
     number1.textContent = num;
 });
+
+const plus2 = document.getElementById("plus2");
+const minus2 = document.getElementById("minus2");
+const number2 = document.getElementById("number2");
+
+plus2.addEventListener("click", function(){
+
+    num++;
+    number2.textContent = num;
+
+    total_send.textContent = resultNumber_send * num;
+});
+
+minus2.addEventListener("click", function(){
+    num--;
+    if (num < 1) {
+        num = 1;
+    }
+    total_send.textContent = resultNumber_send * num;
+
+    number2.textContent = num;
+});

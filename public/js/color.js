@@ -1,5 +1,7 @@
 const result = document.querySelector('#result');
+const result_send = document.querySelector('#result_send');
 const total = document.querySelector('#total');
+const total_send = document.querySelector('#total_send');
 
 let dataValueContent;
 
@@ -16,5 +18,6 @@ document.querySelectorAll('.toggle-nominal').forEach((item) => {
     item.classList.add('active');
 
     result.textContent = dataValue;
+    result_send.textContent = dataValue;
   })
 })

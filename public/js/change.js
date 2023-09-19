@@ -20,14 +20,36 @@ function deleteClass(element, text, className) {
 
 send_gift_btn.addEventListener('click', () => {
   if (send_gift_btn.classList.contains('send-gift-btn')) {
+    if (document.querySelector('.toggle-nominal.active') == null){
+
+      alert("Выберите сначала сумму сертификата");
+  
+    } else {
+      number2.textContent = num;
+
+      total_send.textContent = dataValueContent * num;
+
+      let resultNum_send = Number(result_send.textContent);
+
+      resultNumber_send = resultNum_send;
+
       document.querySelector('.letter').style.display = 'flex';
       document.querySelector('.send_pay_tw').style.display = 'flex';
       document.querySelector('.btn-block').style.display = 'none';
       document.querySelector('.condition').style.display = 'none';
+    }
   } else {
       
   }
 })
+
+document.getElementById('btn-back').addEventListener('click', () => {
+  document.querySelector('.letter').style.display = 'none'
+  document.querySelector('.send_pay_tw').style.display = 'none';
+  document.querySelector('.btn-block').style.display = 'flex';
+  document.querySelector('.condition').style.display = 'block';
+  document.querySelector('.send_pay').style.width = '100%'
+});
 
 choice.addEventListener('click', () => {
 
