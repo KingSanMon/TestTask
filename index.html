@@ -1,338 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/adeptiv.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/adeptiv.css" />
     <title>Kitchen</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <a href="#" class="logo"></a>
-        <nav class="navbar" id="navbar">
-            <div class="navigation">
-                <a href="#work">Как это работает?</a>
-                <a href="#conditions">Условия использования</a>
-                <a href="#">Оформить заказ</a>
-                <a href="tel:84959885095" class="number-phone">8(495)988-50-95</a>
-            </div>
-            <button class="nav-button" id="nav-button">
-                <img src="public/image/open.png" alt="open__nav" class="button-open" id="button-open">
-            </button>
-        </nav>
+      <a href="#" class="logo"></a>
+      <nav class="navbar" id="navbar">
+        <div class="navigation">
+          <a href="#work">Как это работает?</a>
+          <a href="#conditions">Условия использования</a>
+          <a href="#">Оформить заказ</a>
+          <a href="tel:84959885095" class="number-phone">8(495)988-50-95</a>
+        </div>
+        <button class="nav-button" id="nav-button">
+          <img
+            src="public/image/open.png"
+            alt="open__nav"
+            class="button-open"
+            id="button-open"
+          />
+        </button>
+      </nav>
     </header>
     <main>
-        <section class="about" id="about">
-            <div class="left-content">
-                <h1>
-                    Электронные
-                    подарочные
-                    сертификаты
-                </h1>
+      <section class="about" id="about">
+        <div class="left-content">
+          <h1>Электронные подарочные сертификаты</h1>
+          <p>
+            Выберите номинал, количество и получите подарок за 5 минут.
+            Универсальный подарок для ваших близких.
+          </p>
+          <div class="condition">
+            <a href="#" class="active">Условия</a>
+          </div>
+        </div>
+        <div class="right-content" id="right-content__about">
+          <div class="preview">
+            <img src="public/image/Decor4.png" alt="" class="img__preview" />
+          </div>
+          <div class="btn-block" id="btn-block">
+            <div class="top" id="top">
+              <p class="toggle-nominal" data-nominal="1000" id="one">1000</p>
+              <p class="toggle-nominal" data-nominal="3000" id="three">3000</p>
+              <p class="toggle-nominal" data-nominal="5000" id="five">5000</p>
+            </div>
+            <div class="center" id="center">
+              <div class="nominal frame">
+                <input
+                  type="text"
+                  placeholder="Введите номинал"
+                  class="nominal-input"
+                  id="nominal-input"
+                />
+              </div>
+              <div class="quantity frame">
+                <p>количество</p>
+                <div class="quantity-gift">
+                  <p class="minus" id="minus" name="minus">-</p>
+                  <p class="number" id="number" name="number">1</p>
+                  <p class="plus" id="plus" name="plus">+</p>
+                </div>
+              </div>
+            </div>
+            <!-- ПОсле нажатия отправить себе -->
+            <div class="send_pay" id="send_pay">
+              <div class="quantity_amoun">
+                <div class="counting">
+                  <div class="data-toggle">
+                    <p id="result"></p>
+                  </div>
+                  <div class="quantity frame">
+                    <p>количество</p>
+                    <div class="quantity-gift">
+                      <p class="minus" id="minus1" name="minus">-</p>
+                      <p class="number" id="number1" name="number">1</p>
+                      <p class="plus" id="plus1" name="plus">+</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="result_total">
+                  <p class="total">Итого: <span id="total"></span></p>
+                </div>
+                <div class="email__send_pay">
+                  <input
+                    type="email"
+                    class="email"
+                    placeholder="Введите ваш email"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="send">
+                <a
+                  href="#right-content__about"
+                  class="btn-me active"
+                  id="btn-me"
+                  >Отправить себе</a
+                >
+              </div>
+              <div class="send-gift">
+                <a
+                  href="#right-content__about"
+                  class="btn frame send-gift-btn"
+                  id="btn"
+                  >Отправить в подарок</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="letter" id="letter">
+        <div class="letter_preview">
+          <h1>Предосмотр письма:</h1>
+          <div class="preview">
+            <p id="appeal_user">
+              Дорогой Иван!
+            </p>
+            <p id="congratulation_user">Поздравляем с юбилеем:</p>
+            <div class="img__sertificate">
+              <img src="public/image/sertificat.png" alt="" />
+            </div>
+            <div class="alips"></div>
+          </div>
+        </div>
+        <div class="information_user">
+          <div class="contacting_recipient block_frame">
+            <p>Обращение к получателю:</p>
+            <input type="text" id="appeal" placeholder="Дорогой Иван" />
+          </div>
+          <div class="email_recipient block_frame">
+            <p>email получателя:</p>
+            <input type="email" placeholder="demo@demo.ru" />
+          </div>
+          <div class="my_email block_frame">
+            <p>ваш email *:</p>
+            <input type="email" placeholder="demo@demo.ru" />
+          </div>
+          <p>
+            *На ваш email будет отправлено письмо о статусе отправки сертификата
+          </p>
+          <div class="text-letter">
+            <textarea name="" id="congratulation" class="congratulation" cols="55" rows="7" placeholder="Ванька поздарвляем с юбилеем!"></textarea>
+          </div>
+          <div class="send_pay_tw" id="send_pay_tw">
+            <div class="quantity_amoun">
+              <div class="counting">
+                <div class="data-toggle__send_pay_tw">
+                  <p id="result_send"></p>
+                </div>
+                <div class="quantity frame">
+                  <p>количество</p>
+                  <div class="quantity-gift">
+                    <p class="minus" id="minus2" name="minus">-</p>
+                    <p class="number" id="number2" name="number">1</p>
+                    <p class="plus" id="plus2" name="plus">+</p>
+                  </div>
+                </div>
+              </div>
+              <div class="result_total">
+                <p class="total">Итого: <span id="total_send"></span></p>
+              </div>
+              <div class="email__send_pay">
+                <input
+                  type="email"
+                  class="email"
+                  placeholder="Введите ваш email"
+                />
+              </div>
+            </div>
+            <div class="btn-send-gift">
+              <div class="send">
+                <a href="#right-content__about" class="active" id="btn-me"
+                  >Отправить и оплатить</a
+                >
+              </div>
+              <div class="send-gift">
+                <a
+                  href="#right-content__about"
+                  class="frame back-btn__send_gift"
+                  id="btn-back"
+                  >Вернутся назад</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <h1 class="title">Как это работает?</h1>
+        <div class="information-works">
+          <div class="nominal__choose">
+            <div class="left info">
+              <div class="rectangle">
+                <h1>1</h1>
+              </div>
+              <div class="info-text">
+                <h3>Выберите номинал</h3>
                 <p>
-                    Выберите номинал, количество и получите подарок за 5 минут.
-                    Универсальный подарок для ваших близких.
+                  В верхней части сайта <br />
+                  представлены <br />
+                  номиналы на выбор
                 </p>
-                <div class="condition">
-                    <a href="#" class="active">Условия</a>
-                </div>
+              </div>
             </div>
-            <div class="right-content" id="right-content__about">
-                <div class="preview">
-                    <img src="public/image/Decor4.png" alt="" class="img__preview">
-                </div>
-                <div class="btn-block" id="btn-block">
-                    <div class="top" id="top">
-                        <p class="toggle-nominal" data-nominal="1000" id="one">1000</p>
-                        <p class="toggle-nominal" data-nominal="3000" id="three">3000</p>
-                        <p class="toggle-nominal" data-nominal="5000" id="five">5000</p>
-                    </div>
-                    <div class="center" id="center">
-                        <div class="nominal frame">
-                            <input type="text" placeholder="Введите номинал" class="nominal-input" id="nominal-input">
-                        </div>
-                        <div class="quantity frame">
-                            <p>количество</p>
-                            <div class="quantity-gift">
-                                <p class="minus" id="minus" name="minus">-</p>
-                                <p class="number" id="number" name="number">1</p>
-                                <p class="plus" id="plus" name="plus">+</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ПОсле нажатия отправить себе -->
-                    <div class="send_pay" id="send_pay">
-                        <div class="quantity_amoun">
-                            <div class="counting">
-                                <div class="data-toggle">
-                                    <p id="result"></p>
-                                </div>
-                                <div class="quantity frame">
-                                    <p>количество</p>
-                                    <div class="quantity-gift">
-                                        <p class="minus" id="minus1" name="minus">-</p>
-                                        <p class="number" id="number1" name="number">1</p>
-                                        <p class="plus" id="plus1" name="plus">+</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="result_total">
-                                <p class="total">Итого: <span id="total"></span></p>
-                            </div>
-                            <div class="email__send_pay">
-                                <input type="email" class="email" placeholder="Введите ваш email">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="send">
-                            <a href="#right-content__about" class="btn-me active" id="btn-me">Отправить себе</a>
-                        </div>
-                        <div class="send-gift">
-                            <a href="#right-content__about" class="btn frame send-gift-btn" id="btn">Отправить в подарок</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="letter" id="letter">
-            <div class="letter_preview">
-                <h1>Предосмотр письма:</h1>
-                <div class="preview">
-                    <p>Дорогой <span>Иван!<span></p>
-                    <p>Поздравляем с юбилеем:</p>
-                    <div class="img__sertificate">
-                        <img src="public/image/sertificat.png" alt="">
-                    </div>
-                    <div class="alips"></div>
-                </div>
-            </div>
-            <div class="information_user">
-                <div class="contacting_recipient block_frame">
-                    <p>Обращение к получателю:</p>
-                    <input type="text" placeholder="Дорогой Иван">
-                </div>
-                <div class="email_recipient block_frame">
-                    <p>email получателя:</p>
-                    <input type="email" placeholder="demo@demo.ru">
-                </div>
-                <div class="my_email block_frame">
-                    <p>ваш email *:</p>
-                    <input type="email" placeholder="demo@demo.ru">
-                </div>
+            <div class="decore-rectangle"></div>
+          </div>
+          <div class="registration">
+            <div class="center info">
+              <div class="rectangle">
+                <h1>2</h1>
+              </div>
+              <div class="info-text">
+                <h3>Оформите</h3>
                 <p>
-                    *На ваш email будет отправлено письмо о статусе отправки сертификата
+                  выберите формат <br />
+                  отпарвки - вам лично <br />
+                  на почту или сразу на <br />
+                  почту получателя
                 </p>
-                <div class="text-letter">
-                    <p>текст письма:</p>
-                    <input type="text" placeholder="Поздравляем с юбилеем!">
-                </div>
-                <div class="send_pay_tw" id="send_pay_tw">
-                    <div class="quantity_amoun">
-                        <div class="counting">
-                            <div class="data-toggle__send_pay_tw">
-                                <p id="result_send"></p>
-                            </div>
-                            <div class="quantity frame">
-                                <p>количество</p>
-                                <div class="quantity-gift">
-                                    <p class="minus" id="minus2" name="minus">-</p>
-                                    <p class="number" id="number2" name="number">1</p>
-                                    <p class="plus" id="plus2" name="plus">+</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="result_total">
-                            <p class="total">Итого: <span id="total_send"></span></p>
-                        </div>
-                        <div class="email__send_pay">
-                            <input type="email" class="email" placeholder="Введите ваш email">
-                        </div>
-                    </div>
-                    <div class="btn-send-gift">
-                        <div class="send">
-                            <a href="#right-content__about" class="active" id="btn-me">Отправить и оплатить</a>
-                        </div>
-                        <div class="send-gift">
-                            <a href="#right-content__about" class="frame back-btn__send_gift" id="btn-back">Вернутся назад</a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-        <section class="work" id="work">
-            <h1 class="title">Как это работает?</h1>
-            <div class="information-works">
-                <div class="nominal__choose">
-                    <div class="left info">
-                        <div class="rectangle">
-                            <h1>1</h1>
-                        </div>
-                        <div class="info-text">
-                            <h3>Выберите номинал</h3>
-                            <p>
-                                В верхней части сайта <br> 
-                                представлены <br>
-                                номиналы на выбор
-                            </p>
-                        </div>
-                    </div>
-                    <div class="decore-rectangle"></div>
-                </div>
-                <div class="registration">
-                    <div class="center info">
-                        <div class="rectangle">
-                            <h1>2</h1>
-                        </div>
-                        <div class="info-text">
-                            <h3>Оформите</h3>
-                            <p>
-                                выберите формат <br>
-                                отпарвки - вам лично <br>
-                                на почту или сразу на <br>
-                                почту получателя
-                            </p>
-                        </div>
-                    </div>
-                    <div class="decore-rectangle"></div>
-                </div>
-                <div class="give">
-                    <div class="right info">
-                        <div class="rectangle">
-                            <h1>3</h1>
-                        </div>
-                        <div class="info-text">
-                            <h3>Подарите</h3>
-                            <p>
-                                если вы отпарвляете <br>
-                                себе, то можете <br>
-                                переслать письмо
-                            </p>
-                        </div>
-                    </div>
-                    <div class="decore-rectangle"></div>
-                </div>
-            </div>
-        </section>
-        <section class="certificate" id="certificate">
-            <div class="left">
-                <h1>
-                    Вид сертификата, который <br>
-                    вы получите по почте
-                </h1>
-                <div class="quick-registration">
-                    <div class="img__design">
-                        <img src="public/image/Group 7.png" alt="" class="img_decor">
-                    </div>
-                    <div class="info-text">
-                        <h3>Быстрое оформление</h3>
-                        <p>
-                            Отправка сертификата занимает не более 5 минут <br>
-                            с момента заказа и оплаты
-                        </p>
-                    </div>
-                </div> 
-                <div class="quick-registration">
-                    <div class="img__design">
-                        <img src="public/image/Group 11.png" alt="" class="img_decor">
-                    </div>
-                    <div class="info-text">
-                        <h3>Гибкие номиналы</h3>
-                        <p>
-                            Сложно выбрать сумму, которую необходимо <br>
-                            подарить - поэтому мы представляем большой выбор
-                        </p>
-                    </div>
-                </div>
-                <div class="quick-registration">
-                    <div class="img__design">
-                        <img src="public/image/Group 12.png" alt="" class="img_decor">
-                    </div>
-                    <div class="info-text">
-                        <h3>Удобно испльзовать</h3>
-                        <p>
-                            Электронные сертификаты просты в использовании <br> 
-                            и содержит в себе подробную инструкцию
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="right">
+            <div class="decore-rectangle"></div>
+          </div>
+          <div class="give">
+            <div class="right info">
+              <div class="rectangle">
+                <h1>3</h1>
+              </div>
+              <div class="info-text">
+                <h3>Подарите</h3>
                 <p>
-                    Благодорим за покупку! <br><br>
-                    Ваш сертификат доступен для <br>
-                    скачивания ниже:
+                  если вы отпарвляете <br />
+                  себе, то можете <br />
+                  переслать письмо
                 </p>
-                <div class="img__certificate">
-                    <img src="public/image/sertificat.png" alt="" class="image__certificate">
-                </div>
+              </div>
             </div>
-        </section>
-        <section class="conditions" id="conditions">
-            <div class="left">
-                <h1>Условия использования</h1>
-                <p>
-                    <br>
-                    На сайте мы всегда обновляем информацию по <br>
-                    условиям использования сертификата
-                </p>
+            <div class="decore-rectangle"></div>
+          </div>
+        </div>
+      </section>
+      <section class="certificate" id="certificate">
+        <div class="left">
+          <h1>
+            Вид сертификата, который <br />
+            вы получите по почте
+          </h1>
+          <div class="quick-registration">
+            <div class="img__design">
+              <img src="public/image/Group 7.png" alt="" class="img_decor" />
             </div>
-            <div class="right">
-                <p>
-                    "<span>justfood -</span> сервис доставки правильного питания
-                    в Москве.
-                    <span>1.</span> Зайдите на сайт <span>www.justfood.pro</span>
-                    <span>2.</span> Выберите любое меню любой калорийности.
-                    <span>3.</span> Введите промокод в поле промокодов во время
-                    оформления заказа."
-                </p>
+            <div class="info-text">
+              <h3>Быстрое оформление</h3>
+              <p>
+                Отправка сертификата занимает не более 5 минут <br />
+                с момента заказа и оплаты
+              </p>
             </div>
-        </section>
-        <section class="why-we">
-            <h1>Почему мы?</h1>
-            <div class="blocks">
-                <div class="left wimg">
-                    <img src="public/image/image.png" alt="">
-                    <div class="info">
-                        <p>
-                            Безопаснее похода в магазин
-                        </p>
-                    </div>
-                </div>
-                <div class="center wimg">
-                    <img src="public/image/image2.png" alt="">
-                    <div class="info">
-                        <p>
-                            Разнообразное меню
-                        </p>
-                    </div>
-                </div>
-                <div class="right wimg">
-                    <img src="public/image/image3.png" alt="">
-                    <div class="info">
-                        <p>
-                            Можно заменять блюда
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div class="quick-registration">
+            <div class="img__design">
+              <img src="public/image/Group 11.png" alt="" class="img_decor" />
             </div>
-        </section>
+            <div class="info-text">
+              <h3>Гибкие номиналы</h3>
+              <p>
+                Сложно выбрать сумму, которую необходимо <br />
+                подарить - поэтому мы представляем большой выбор
+              </p>
+            </div>
+          </div>
+          <div class="quick-registration">
+            <div class="img__design">
+              <img src="public/image/Group 12.png" alt="" class="img_decor" />
+            </div>
+            <div class="info-text">
+              <h3>Удобно испльзовать</h3>
+              <p>
+                Электронные сертификаты просты в использовании <br />
+                и содержит в себе подробную инструкцию
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <p>
+            Благодорим за покупку! <br /><br />
+            Ваш сертификат доступен для <br />
+            скачивания ниже:
+          </p>
+          <div class="img__certificate">
+            <img
+              src="public/image/sertificat.png"
+              alt=""
+              class="image__certificate"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="conditions" id="conditions">
+        <div class="left">
+          <h1>Условия использования</h1>
+          <p>
+            <br />
+            На сайте мы всегда обновляем информацию по <br />
+            условиям использования сертификата
+          </p>
+        </div>
+        <div class="right">
+            <div class="text__right--conditions">
+              <p>"justfood - сервис доставки правильного питания в Москве.</p>
+              <p>1. Зайдите на сайт www.justfoot.pro</p>
+              <p>2. Выберите любое меню любой калорийности.</p>
+              <p>3. Введите промокод в поле промокодов во время оформления заказа</p>
+            </div>
+        </div>
+      </section>
+      <section class="why-we">
+        <h1>Почему мы?</h1>
+        <div class="blocks">
+          <div class="left wimg">
+            <img src="public/image/image.png" alt="" />
+            <div class="info">
+              <p>Безопаснее похода в магазин</p>
+            </div>
+          </div>
+          <div class="center wimg">
+            <img src="public/image/image2.png" alt="" />
+            <div class="info">
+              <p>Разнообразное меню</p>
+            </div>
+          </div>
+          <div class="right wimg">
+            <img src="public/image/image3.png" alt="" />
+            <div class="info">
+              <p>Можно заменять блюда</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <nav class="navbar">
-            <div class="navigation">
-                <a href="#work">Как это работает?</a>
-                <a href="#conditions">Условия использоавния</a>
-                <a href="#">Оформить заказ</a>
-                <a class="number-phone" href="tel:84959885095">8(495)988-50-95</a>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="navigation">
+          <a href="#work">Как это работает?</a>
+          <a href="#conditions">Условия использоавния</a>
+          <a href="#">Оформить заказ</a>
+          <a class="number-phone" href="tel:84959885095">8(495)988-50-95</a>
+        </div>
+      </nav>
     </footer>
     <script src="public/js/script.js"></script>
     <script src="public/js/color.js"></script>
     <script src="public/js/change.js"></script>
     <script src="public/js/letter.js"></script>
     <script src="public/js/main.js"></script>
-</body>
+  </body>
 </html>
