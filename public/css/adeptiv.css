@@ -1,4 +1,8 @@
-/* Доделать адаптив */
+/**
+ * Доделать адаптив
+ *
+ * @format
+ */
 
 @media only screen and (max-width: 1442px) {
   .header {
@@ -42,26 +46,26 @@
     gap: 35px;
   }
 
-  .left-content {
+  .about__text-content {
     width: 442px;
   }
 
-  .left-content h1 {
+  .about__text-content h1 {
     font-size: 55px;
   }
 
-  .left-content p {
+  .about__text-content p {
     font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 989px) {
-  .left-content {
+  .about__text-content {
     display: flex;
     justify-content: center;
   }
 
-  .left-content .condition {
+  .about__text-content .condition {
     margin-top: 30px;
   }
 }
@@ -170,11 +174,11 @@
     height: 31px;
   }
 
-  .left-content {
+  .about__text-content {
     width: 350px;
   }
 
-  .left-content h1 {
+  .about__text-content h1 {
     font-size: 40px;
   }
 
@@ -183,11 +187,11 @@
     justify-content: center;
   }
 
-  .img__preview {
+  .preview__img {
     width: 350px;
   }
 
-  .right-content .btn-block {
+  .about__form-send-sertificate .about__buttons {
     width: 435px;
     height: 400px;
     border-radius: 8px;
@@ -234,7 +238,7 @@
 
 @media only screen and (max-width: 440px) {
   .about,
-  .img__preview,
+  .preview__img,
   .certificate,
   .image__certificate,
   .conditions,
@@ -242,7 +246,7 @@
     width: 320px;
   }
 
-  .right-content .btn-block {
+  .about__form-send-sertificate .about__buttons {
     width: 320px;
     height: 450px;
   }
@@ -261,7 +265,7 @@
 
   .conditions .right {
     width: 300px;
-    height: 277px;
+    height: auto;
     padding: 14px;
     margin: 30px 0 0 0;
   }
@@ -275,7 +279,7 @@
     height: 24px;
   }
 
-  .top .toggle-nominal {
+  .about__toggle-nominal .toggle-nominal {
     width: 85%;
   }
 }

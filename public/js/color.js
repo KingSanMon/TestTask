@@ -1,16 +1,18 @@
+/** @format */
+
 const result = document.querySelector("#result");
 const result_send = document.querySelector("#result_send");
 const total = document.querySelector("#total");
 const total_send = document.querySelector("#total_send");
-const inputNominal = document.getElementById('nominal-input');
+const inputNominal = document.getElementById("nominal-input");
 
-document.querySelector("#nominal-input").addEventListener('change', (event) => {
+document.querySelector("#nominal-input").addEventListener("change", (event) => {
   if (event.target && event.target.value) {
-    console.log("заполнено")
+    console.log("заполнено");
   } else {
-    console.log("Не заполнено")
+    console.log("Не заполнено");
   }
-})
+});
 
 document.querySelectorAll(".toggle-nominal").forEach((item) => {
   item.addEventListener("click", (event) => {

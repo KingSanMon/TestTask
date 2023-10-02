@@ -29,7 +29,7 @@
     </header>
     <main>
       <section class="about" id="about">
-        <div class="left-content">
+        <div class="about__text-content">
           <h1>Электронные подарочные сертификаты</h1>
           <p>
             Выберите номинал, количество и получите подарок за 5 минут.
@@ -39,17 +39,17 @@
             <a href="#" class="active">Условия</a>
           </div>
         </div>
-        <div class="right-content" id="right-content__about">
+        <div class="about__form-send-sertificate" id="about__right-content">
           <div class="preview">
-            <img src="public/image/Decor4.png" alt="" class="img__preview" />
+            <img src="public/image/Decor4.png" alt="" class="preview__img" />
           </div>
-          <div class="btn-block" id="btn-block">
-            <div class="top" id="top">
+          <div class="about__buttons" id="about__buttons">
+            <div class="about__toggle-nominal" id="about__toggle-nominal">
               <p class="toggle-nominal" data-nominal="1000" id="one">1000</p>
               <p class="toggle-nominal" data-nominal="3000" id="three">3000</p>
               <p class="toggle-nominal" data-nominal="5000" id="five">5000</p>
             </div>
-            <div class="center" id="center">
+            <div class="about__quantity-input" id="about__quantity-input">
               <div class="nominal frame">
                 <input
                   type="text"
@@ -61,9 +61,9 @@
               <div class="quantity frame">
                 <p>количество</p>
                 <div class="quantity-gift">
-                  <p class="minus" id="minus" name="minus">-</p>
+                  <p class="minus" id="reduce" name="minus">-</p>
                   <p class="number" id="number" name="number">1</p>
-                  <p class="plus" id="plus" name="plus">+</p>
+                  <p class="plus" id="add" name="plus">+</p>
                 </div>
               </div>
             </div>
@@ -77,9 +77,9 @@
                   <div class="quantity frame">
                     <p>количество</p>
                     <div class="quantity-gift">
-                      <p class="minus" id="minus1" name="minus">-</p>
-                      <p class="number" id="number1" name="number">1</p>
-                      <p class="plus" id="plus1" name="plus">+</p>
+                      <p class="minus" id="send_pay__reduce" name="minus">-</p>
+                      <p class="number" id="send_pay__number" name="number">1</p>
+                      <p class="plus" id="send_pay__add" name="plus">+</p>
                     </div>
                   </div>
                 </div>
@@ -95,10 +95,10 @@
                 </div>
               </div>
             </div>
-            <div class="bottom">
+            <div class="about__control">
               <div class="send">
                 <a
-                  href="#right-content__about"
+                  href="#about__right-content_"
                   class="btn-me active"
                   id="btn-me"
                   >Отправить себе</a
@@ -106,7 +106,7 @@
               </div>
               <div class="send-gift">
                 <a
-                  href="#right-content__about"
+                  href="#about__right-content_"
                   class="btn frame send-gift-btn"
                   id="btn"
                   >Отправить в подарок</a
@@ -158,9 +158,9 @@
                 <div class="quantity frame">
                   <p>количество</p>
                   <div class="quantity-gift">
-                    <p class="minus" id="minus2" name="minus">-</p>
-                    <p class="number" id="number2" name="number">1</p>
-                    <p class="plus" id="plus2" name="plus">+</p>
+                    <p class="minus" id="counting__reduce" name="minus">-</p>
+                    <p class="number" id="counting__number" name="number">1</p>
+                    <p class="plus" id="counting__add" name="plus">+</p>
                   </div>
                 </div>
               </div>
@@ -177,13 +177,13 @@
             </div>
             <div class="btn-send-gift">
               <div class="send">
-                <a href="#right-content__about" class="active" id="btn-me"
+                <a href="#about__right-content_" class="active" id="btn-me"
                   >Отправить и оплатить</a
                 >
               </div>
               <div class="send-gift">
                 <a
-                  href="#right-content__about"
+                  href="#about__right-content_"
                   class="frame back-btn__send_gift"
                   id="btn-back"
                   >Вернутся назад</a

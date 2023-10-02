@@ -1,3 +1,5 @@
+/** @format */
+
 const navbar = document.querySelector("#navbar");
 const navbutton = document.querySelector("#nav-button");
 const navImg = document.querySelector("#button-open");

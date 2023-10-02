@@ -1,20 +1,22 @@
-const plus = document.getElementById("plus");
-const minus = document.getElementById("minus");
+/** @format */
+
+const add = document.getElementById("add");
+const reduce = document.getElementById("reduce");
 const number = document.getElementById("number");
-const plus1 = document.getElementById("plus1");
-const minus1 = document.getElementById("minus1");
-const number1 = document.getElementById("number1");
-const plus2 = document.getElementById("plus2");
-const minus2 = document.getElementById("minus2");
-const number2 = document.getElementById("number2");
+const send_pay__add = document.getElementById("send_pay__add");
+const send_pay__reduce = document.getElementById("send_pay__reduce");
+const send_pay__number = document.getElementById("send_pay__number");
+const counting__add = document.getElementById("counting__add");
+const counting__reduce = document.getElementById("counting__reduce");
+const counting__number = document.getElementById("counting__number");
 let num = Number(number.textContent);
 
-plus.addEventListener("click", function () {
+add.addEventListener("click", function () {
   num++;
   number.textContent = num;
 });
 
-minus.addEventListener("click", function () {
+reduce.addEventListener("click", function () {
   num--;
   if (num < 1) {
     num = 1;
@@ -22,36 +24,36 @@ minus.addEventListener("click", function () {
   number.textContent = num;
 });
 
-plus1.addEventListener("click", function () {
+send_pay__add.addEventListener("click", function () {
   num++;
-  number1.textContent = num;
+  send_pay__number.textContent = num;
 
   total.textContent = resultNumber * num;
 });
 
-minus1.addEventListener("click", function () {
+send_pay__reduce.addEventListener("click", function () {
   num--;
   if (num < 1) {
     num = 1;
   }
   total.textContent = resultNumber * num;
 
-  number1.textContent = num;
+  send_pay__number.textContent = num;
 });
 
-plus2.addEventListener("click", function () {
+counting__add.addEventListener("click", function () {
   num++;
-  number2.textContent = num;
+  counting__number.textContent = num;
 
   total_send.textContent = resultNumber_send * num;
 });
 
-minus2.addEventListener("click", function () {
+counting__reduce.addEventListener("click", function () {
   num--;
   if (num < 1) {
     num = 1;
   }
   total_send.textContent = resultNumber_send * num;
 
-  number2.textContent = num;
+  counting__number.textContent = num;
 });
