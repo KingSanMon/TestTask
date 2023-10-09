@@ -155,7 +155,8 @@
 @media only screen and (max-width: 550px) {
   .letter_preview .preview {
     width: 440px;
-    height: 523px;
+    min-height: 523px;
+    height: auto;
   }
 
   .img__sertificate img {

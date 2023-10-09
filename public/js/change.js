@@ -32,11 +32,11 @@ function deleteClass(element, text, className) {
   element.classList.remove(className);
 }
 
-appeal.addEventListener("change", (event) => {
+appeal.addEventListener("keyup", (event) => {
   appeal_user.textContent = event.target.value;
 });
 
-congratulation.addEventListener("change", (event) => {
+congratulation.addEventListener("keyup", (event) => {
   congratulation_user.textContent = event.target.value;
 });
 

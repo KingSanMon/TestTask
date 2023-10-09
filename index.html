@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -78,7 +80,9 @@
                     <p>количество</p>
                     <div class="quantity-gift">
                       <p class="minus" id="send_pay__reduce" name="minus">-</p>
-                      <p class="number" id="send_pay__number" name="number">1</p>
+                      <p class="number" id="send_pay__number" name="number">
+                        1
+                      </p>
                       <p class="plus" id="send_pay__add" name="plus">+</p>
                     </div>
                   </div>
@@ -120,10 +124,8 @@
         <div class="letter_preview">
           <h1>Предосмотр письма:</h1>
           <div class="preview">
-            <p id="appeal_user">
-              Дорогой Иван!
-            </p>
-            <p id="congratulation_user">Поздравляем с юбилеем:</p>
+            <p id="appeal_user">Дорогой Иван!</p>
+            <p id="congratulation_user" class="congratulation-preview">Поздравляем с юбилеем:</p>
             <div class="img__sertificate">
               <img src="public/image/sertificat.png" alt="" />
             </div>
@@ -133,21 +135,26 @@
         <div class="information_user">
           <div class="contacting_recipient block_frame">
             <p>Обращение к получателю:</p>
-            <input type="text" id="appeal" placeholder="Дорогой Иван" />
+            <input type="text" id="appeal" class="contacting-recipient__input input_size" placeholder="Дорогой Иван" />
           </div>
           <div class="email_recipient block_frame">
             <p>email получателя:</p>
-            <input type="email" placeholder="demo@demo.ru" />
+            <input type="email" class="recipient_email input_size" placeholder="demo@demo.ru" />
           </div>
           <div class="my_email block_frame">
             <p>ваш email *:</p>
-            <input type="email" placeholder="demo@demo.ru" />
+            <input type="email" class="sender_email input_size" placeholder="demo@demo.ru" />
           </div>
           <p>
             *На ваш email будет отправлено письмо о статусе отправки сертификата
           </p>
           <div class="text-letter">
-            <textarea name="" id="congratulation" class="congratulation" cols="55" rows="7" placeholder="Ванька поздарвляем с юбилеем!"></textarea>
+            <textarea
+              name=""
+              id="congratulation"
+              class="congratulation"
+              placeholder="Ванька поздарвляем с юбилеем!"
+            ></textarea>
           </div>
           <div class="send_pay_tw" id="send_pay_tw">
             <div class="quantity_amoun">
@@ -315,12 +322,14 @@
           </p>
         </div>
         <div class="right">
-            <div class="text__right--conditions">
-              <p>"justfood - сервис доставки правильного питания в Москве.</p>
-              <p>1. Зайдите на сайт www.justfoot.pro</p>
-              <p>2. Выберите любое меню любой калорийности.</p>
-              <p>3. Введите промокод в поле промокодов во время оформления заказа</p>
-            </div>
+          <div class="text__right--conditions">
+            <p>"justfood - сервис доставки правильного питания в Москве.</p>
+            <p>1. Зайдите на сайт www.justfoot.pro</p>
+            <p>2. Выберите любое меню любой калорийности.</p>
+            <p>
+              3. Введите промокод в поле промокодов во время оформления заказа
+            </p>
+          </div>
         </div>
       </section>
       <section class="why-we">
