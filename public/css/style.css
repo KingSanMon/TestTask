@@ -1,6 +1,6 @@
 /** @format */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   cursor: url(../image/cursor.png), auto;
 }
 
@@ -151,8 +151,8 @@ body::-webkit-scrollbar {
   background: #fff;
   box-shadow: 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
-    0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 4px 7px 0px rgba(0, 0, 0, 0.05);
 }
 
 .about__form-send-sertificate .about__buttons .about__toggle-nominal {
@@ -216,8 +216,8 @@ body::-webkit-scrollbar {
   background: #fff;
   box-shadow: 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
-    0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 4px 7px 0px rgba(0, 0, 0, 0.05);
 }
 
 .btn-block-update .about__toggle-nominal .quantity {
@@ -350,11 +350,7 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
-.about__form-send-sertificate
-  .about__buttons
-  .about__control
-  .send-gift
-  .btn:hover {
+.about__form-send-sertificate .about__buttons .about__control .send-gift .btn:hover {
   background: #eeb7046f;
 }
 
@@ -376,11 +372,9 @@ body::-webkit-scrollbar {
   border-radius: 2.25rem;
   background: #fff;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
-    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
-    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
 .letter .letter_preview .preview p {
@@ -493,11 +487,9 @@ body::-webkit-scrollbar {
   border-radius: 36px;
   background: #fff;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
-    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
-    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
 .rectangle,
@@ -591,11 +583,9 @@ body::-webkit-scrollbar {
   border-radius: 1.625rem;
   background: #fff;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
-    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
-    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
 .certificate .right img {
@@ -636,11 +626,10 @@ body::-webkit-scrollbar {
   border-radius: 0.625rem;
   background: #fff;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
-    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
-    0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .conditions .right p {
@@ -679,11 +668,9 @@ body::-webkit-scrollbar {
   height: 24rem;
   border-radius: 1.5rem;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
-    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
     0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
-    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
 .why-we .blocks .wimg img {
