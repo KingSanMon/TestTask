@@ -38,22 +38,18 @@ congratulation.addEventListener('keyup', event => {
 
 send_gift_btn.addEventListener('click', () => {
   if (send_gift_btn.classList.contains('send-gift-btn')) {
-    if (document.querySelector('.toggle-nominal.active') == null) {
-      alert('Выберите сначала сумму сертификата');
-    } else {
-      counting__number.textContent = num;
-      total_send.textContent = dataValueContent * num;
+    counting__number.textContent = num;
+    total_send.textContent = dataValueContent * num;
 
-      let resultNum_send = Number(result_send.textContent);
-      resultNumber_send = resultNum_send;
+    let resultNum_send = Number(result_send.textContent);
+    resultNumber_send = resultNum_send;
 
-      document.querySelector('.letter').style.display = 'flex';
-      document.querySelector('.send_pay_tw').style.display = 'flex';
+    document.querySelector('.letter').style.display = 'flex';
+    document.querySelector('.send_pay_tw').style.display = 'flex';
 
-      block_buttons.forEach(element => {
-        element.classList.add('display-none');
-      });
-    }
+    block_buttons.forEach(element => {
+      element.classList.add('display-none');
+    });
   }
 });
 
@@ -69,27 +65,23 @@ document.getElementById('btn-back').addEventListener('click', () => {
 });
 
 choice.addEventListener('click', () => {
-  if (document.querySelector('.toggle-nominal.active') == null) {
-    alert('Выберите сначала сумму сертификата');
-  } else {
-    send_pay__number.textContent = num;
+  send_pay__number.textContent = num;
 
-    total.textContent = dataValueContent * num;
+  total.textContent = dataValueContent * num;
 
-    let resultNum = Number(result.textContent);
+  let resultNum = Number(result.textContent);
 
-    resultNumber = resultNum;
+  resultNumber = resultNum;
 
-    changeButton(choice, 'Отправить и опратить', 'send-btn');
-    changeButton(choiceGift, 'Вернуться назад', 'back-btn');
+  changeButton(choice, 'Отправить и опратить', 'send-btn');
+  changeButton(choiceGift, 'Вернуться назад', 'back-btn');
 
-    choiceGift.classList.remove('send-gift-btn');
+  choiceGift.classList.remove('send-gift-btn');
 
-    certificateAndWork.forEach(element => {
-      element.style.display = 'none';
-    });
-    send_pay.style.display = 'flex';
-  }
+  certificateAndWork.forEach(element => {
+    element.style.display = 'none';
+  });
+  send_pay.style.display = 'flex';
 });
 
 choiceGift.addEventListener('click', event => {
