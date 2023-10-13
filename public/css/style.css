@@ -162,6 +162,7 @@ body::-webkit-scrollbar {
 }
 
 .about__toggle-nominal .toggle-nominal {
+  user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;

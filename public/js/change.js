@@ -36,8 +36,45 @@ congratulation.addEventListener('keyup', event => {
   congratulation_user.textContent = event.target.value;
 });
 
+// вместо стайл дисплей сделать по классам все
+
+document.getElementById('btn-back').addEventListener('click', () => {
+  document.querySelector('.letter').style.display = 'none';
+  document.querySelector('.send_pay_tw').style.display = 'none';
+
+  block_buttons.forEach(element => {
+    element.classList.remove('display-none');
+  });
+});
+
+choice.addEventListener('click', () => {
+  if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
+    alert('Нужно что нибудь ввести');
+  } else {
+    send_pay__number.textContent = num;
+
+    total.textContent = dataValueContent * num;
+
+    let resultNum = Number(result.textContent);
+
+    resultNumber = resultNum;
+
+    changeButton(choice, 'Отправить и опратить', 'send-btn');
+    changeButton(choiceGift, 'Вернуться назад', 'back-btn');
+
+    choiceGift.classList.remove('send-gift-btn');
+
+    certificateAndWork.forEach(element => {
+      element.style.display = 'none';
+    });
+    send_pay.style.display = 'flex';
+  }
+});
+
 send_gift_btn.addEventListener('click', () => {
-  if (send_gift_btn.classList.contains('send-gift-btn')) {
+  if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
+    return;
+  } else if (send_gift_btn.classList.contains('send-gift-btn')) {
     counting__number.textContent = num;
     total_send.textContent = dataValueContent * num;
 
@@ -53,39 +90,10 @@ send_gift_btn.addEventListener('click', () => {
   }
 });
 
-// вместо стайл дисплей сделать по классам все
-
-document.getElementById('btn-back').addEventListener('click', () => {
-  document.querySelector('.letter').style.display = 'none';
-  document.querySelector('.send_pay_tw').style.display = 'none';
-
-  block_buttons.forEach(element => {
-    element.classList.remove('display-none');
-  });
-});
-
-choice.addEventListener('click', () => {
-  send_pay__number.textContent = num;
-
-  total.textContent = dataValueContent * num;
-
-  let resultNum = Number(result.textContent);
-
-  resultNumber = resultNum;
-
-  changeButton(choice, 'Отправить и опратить', 'send-btn');
-  changeButton(choiceGift, 'Вернуться назад', 'back-btn');
-
-  choiceGift.classList.remove('send-gift-btn');
-
-  certificateAndWork.forEach(element => {
-    element.style.display = 'none';
-  });
-  send_pay.style.display = 'flex';
-});
-
 choiceGift.addEventListener('click', event => {
-  if (event.target.classList.contains('back-btn')) {
+  if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
+    alert('Нужно заполнить хоть какое то поле');
+  } else if (event.target.classList.contains('back-btn')) {
     number.textContent = num;
 
     deleteClass(choice, 'Отправить себе', 'send-btn');
