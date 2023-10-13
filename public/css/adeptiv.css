@@ -186,6 +186,7 @@
   .preview {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .preview__img {
