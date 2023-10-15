@@ -125,7 +125,7 @@
     display: none;
   }
 
-  .nav-button {
+  .navbar__button-burger {
     top: 20px;
     right: 30px;
     z-index: 3;
@@ -159,7 +159,7 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .letter_preview .preview {
+  .letter_preview .food {
     width: 440px;
     min-height: 523px;
     height: auto;
@@ -185,11 +185,15 @@
     width: 350px;
   }
 
+  .full-size {
+    width: 100%;
+  }
+
   .about__text-content h1 {
     font-size: 40px;
   }
 
-  .preview {
+  .food {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,14 +203,15 @@
     width: 350px;
   }
 
-  .about__form-send-sertificate .about__buttons {
+  .about__send-sertificate .about__buttons {
     width: 435px;
-    height: 400px;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 36px;
   }
 
   .data-toggle {
     margin-bottom: 25px;
+    width: 100%;
   }
 
   .certificate {
@@ -254,9 +259,9 @@
     width: 320px;
   }
 
-  .about__form-send-sertificate .about__buttons {
+  .about__send-sertificate .about__buttons {
     width: 320px;
-    height: 450px;
+    height: auto;
   }
 
   .work {
@@ -285,9 +290,5 @@
   .header .logo {
     width: 100px;
     height: 24px;
-  }
-
-  .about__toggle-nominal .toggle-nominal {
-    width: 85%;
   }
 }

@@ -1,8 +1,8 @@
 /** @format */
 
 const navbar = document.querySelector('#navbar');
-const navbutton = document.querySelector('#nav-button');
-const navImg = document.querySelector('#button-open');
+const navbutton = document.querySelector('#burger');
+const navImg = document.querySelector('#image-burger');
 
 navbutton.onclick = () => {
   if (navbar.classList.toggle('open')) {

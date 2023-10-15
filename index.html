@@ -19,8 +19,8 @@
           <a href="#">Оформить заказ</a>
           <a href="tel:84959885095" class="number-phone">8(495)988-50-95</a>
         </div>
-        <button class="nav-button" id="nav-button">
-          <img src="public/image/open.png" alt="open__nav" class="button-open" id="button-open" />
+        <button class="navbar__button-burger" id="burger">
+          <img src="public/image/open.png" alt="open__nav" class="button-burger__image" id="image-burger" />
         </button>
       </nav>
     </header>
@@ -33,21 +33,21 @@
             <a href="#" class="active">Условия</a>
           </div>
         </div>
-        <div class="about__form-send-sertificate" id="about__right-content">
-          <div class="preview">
+        <div class="about__send-sertificate">
+          <div class="food">
             <img src="public/image/Decor4.png" alt="" class="preview__img" />
           </div>
           <div class="about__buttons" id="about__buttons">
             <div class="about__toggle-nominal" id="about__toggle-nominal">
-              <p class="toggle-nominal" data-nominal="1000" id="one">1000</p>
-              <p class="toggle-nominal" data-nominal="3000" id="three">3000</p>
-              <p class="toggle-nominal" data-nominal="5000" id="five">5000</p>
+              <p class="toggle-nominal full-size" data-nominal="1000">1000</p>
+              <p class="toggle-nominal full-size" data-nominal="3000">3000</p>
+              <p class="toggle-nominal full-size" data-nominal="5000">5000</p>
             </div>
             <div class="about__quantity-input" id="about__quantity-input">
-              <div class="nominal frame">
+              <div class="nominal frame full-size">
                 <input type="text" placeholder="Введите номинал" class="nominal-input" id="nominal-input" />
               </div>
-              <div class="quantity frame">
+              <div class="quantity frame full-size">
                 <p>количество</p>
                 <div class="quantity-gift">
                   <p class="minus" id="reduce" name="minus">-</p>
@@ -81,11 +81,13 @@
               </div>
             </div>
             <div class="about__control">
-              <div class="send">
+              <div class="send full-size">
                 <a href="#about__right-content_" class="btn-me active" id="btn-me">Отправить себе</a>
               </div>
-              <div class="send-gift">
-                <a href="#about__right-content_" class="btn frame send-gift-btn" id="btn">Отправить в подарок</a>
+              <div class="send-gift full-size">
+                <a href="#about__right-content_" class="btn frame send-gift-btn full-size" id="btn"
+                  >Отправить в подарок</a
+                >
               </div>
             </div>
           </div>
@@ -94,7 +96,7 @@
       <section class="letter" id="letter">
         <div class="letter_preview">
           <h1>Предосмотр письма:</h1>
-          <div class="preview">
+          <div class="food">
             <p id="appeal_user">Дорогой Иван!</p>
             <p id="congratulation_user" class="congratulation-preview">Поздравляем с юбилеем:</p>
             <div class="img__sertificate">

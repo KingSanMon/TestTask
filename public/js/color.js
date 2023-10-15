@@ -5,15 +5,23 @@ const result_send = document.querySelector('#result_send');
 const total = document.querySelector('#total');
 const total_send = document.querySelector('#total_send');
 const inputNominal = document.getElementById('nominal-input');
+const allToggleNominal = document.querySelectorAll('.toggle-nominal');
 
 inputNominal.addEventListener('keyup', event => {
   if (event.target && event.target.value) {
     if (document.querySelector('.toggle-nominal.active') !== null) {
       document.querySelector('.toggle-nominal.active').classList.remove('active');
     }
+    allToggleNominal.forEach(item => {
+      item.classList.add('not-activ');
+    });
     dataValueContent = event.target.value;
     result.textContent = dataValueContent;
     result_send.textContent = inputNominal.value;
+  } else {
+    allToggleNominal.forEach(item => {
+      item.classList.remove('not-activ');
+    });
   }
 });
 
