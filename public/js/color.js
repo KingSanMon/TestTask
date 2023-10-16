@@ -4,7 +4,7 @@ const result = document.querySelector('#result');
 const result_send = document.querySelector('#result_send');
 const total = document.querySelector('#total');
 const total_send = document.querySelector('#total_send');
-const inputNominal = document.getElementById('nominal-input');
+const inputNominal = document.querySelector('.nominal-input');
 const allToggleNominal = document.querySelectorAll('.toggle-nominal');
 
 inputNominal.addEventListener('keyup', event => {

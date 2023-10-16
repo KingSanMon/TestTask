@@ -20,7 +20,7 @@
           <a href="tel:84959885095" class="number-phone">8(495)988-50-95</a>
         </div>
         <button class="navbar__button-burger" id="burger">
-          <img src="public/image/open.png" alt="open__nav" class="button-burger__image" id="image-burger" />
+          <img src="public/image/open.png" class="button-burger__image" id="image-burger" />
         </button>
       </nav>
     </header>
@@ -35,17 +35,17 @@
         </div>
         <div class="about__send-sertificate">
           <div class="food">
-            <img src="public/image/Decor4.png" alt="" class="preview__img" />
+            <img src="public/image/Decor4.png" alt="" class="food__img" />
           </div>
-          <div class="about__buttons" id="about__buttons">
-            <div class="about__toggle-nominal" id="about__toggle-nominal">
+          <div class="about__buttons">
+            <div class="about__toggle-nominal">
               <p class="toggle-nominal full-size" data-nominal="1000">1000</p>
               <p class="toggle-nominal full-size" data-nominal="3000">3000</p>
               <p class="toggle-nominal full-size" data-nominal="5000">5000</p>
             </div>
-            <div class="about__quantity-input" id="about__quantity-input">
+            <div class="about__quantity-input">
               <div class="nominal frame full-size">
-                <input type="text" placeholder="Введите номинал" class="nominal-input" id="nominal-input" />
+                <input type="text" placeholder="Введите номинал" class="nominal-input" />
               </div>
               <div class="quantity frame full-size">
                 <p>количество</p>
@@ -57,13 +57,13 @@
               </div>
             </div>
             <!-- ПОсле нажатия отправить себе -->
-            <div class="send_pay" id="send_pay">
+            <div class="send_pay">
               <div class="quantity_amoun">
                 <div class="counting">
                   <div class="data-toggle">
                     <p id="result"></p>
                   </div>
-                  <div class="quantity frame">
+                  <div class="quantity frame full-size">
                     <p>количество</p>
                     <div class="quantity-gift">
                       <p class="minus" id="send_pay__reduce" name="minus">-</p>
@@ -73,9 +73,9 @@
                   </div>
                 </div>
                 <div class="result_total">
-                  <p class="total">Итого: <span id="total"></span></p>
+                  <div class="total">Итого: <b id="total"></b></div>
                 </div>
-                <div class="email__send_pay">
+                <div class="send_pay__email">
                   <input type="email" class="email" placeholder="Введите ваш email" />
                 </div>
               </div>
@@ -145,7 +145,7 @@
               <div class="result_total">
                 <p class="total">Итого: <span id="total_send"></span></p>
               </div>
-              <div class="email__send_pay">
+              <div class="send_pay__email">
                 <input type="email" class="email" placeholder="Введите ваш email" />
               </div>
             </div>

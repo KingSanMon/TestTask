@@ -199,7 +199,7 @@
     align-items: center;
   }
 
-  .preview__img {
+  .food__img {
     width: 350px;
   }
 
@@ -251,7 +251,7 @@
 
 @media only screen and (max-width: 440px) {
   .about,
-  .preview__img,
+  .food__img,
   .certificate,
   .image__certificate,
   .conditions,

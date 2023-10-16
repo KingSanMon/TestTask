@@ -1,20 +1,20 @@
 /** @format */
 
-const choice = document.getElementById('btn-me');
-const choiceGift = document.getElementById('btn');
+const choice = document.querySelector('#btn-me');
+const choiceGift = document.querySelector('#btn');
 
-const send_pay = document.getElementById('send_pay');
-const send_gift_btn = document.querySelector('.send-gift-btn');
+const sendPayButton = document.querySelector('.send_pay');
+const sendGiftButton = document.querySelector('.send-gift-btn');
 
-const appeal = document.getElementById('appeal');
-const appeal_user = document.getElementById('appeal_user');
+const appeal = document.querySelector('#appeal');
+const appealUser = document.querySelector('#appeal_user');
 
-const congratulation = document.getElementById('congratulation');
-const congratulation_user = document.getElementById('congratulation_user');
+const congratulation = document.querySelector('#congratulation');
+const congratulationUser = document.querySelector('#congratulation_user');
 
-const block_buttons = document.querySelectorAll('.about__buttons, .condition, .work, .certificate');
+const blockButtons = document.querySelectorAll('.about__buttons, .condition, .work, .certificate');
 const certificateAndWork = document.querySelectorAll('.about__toggle-nominal, .about__quantity-input');
-const blockDisplayFlex = document.querySelectorAll('.letter, .send-pay-tw');
+const blockDisplayChange = document.querySelectorAll('.letter, .send_pay_tw');
 
 let resultNumber;
 
@@ -29,20 +29,21 @@ function deleteClass(element, text, className) {
 }
 
 appeal.addEventListener('keyup', event => {
-  appeal_user.textContent = event.target.value;
+  appealUser.textContent = event.target.value;
 });
 
 congratulation.addEventListener('keyup', event => {
-  congratulation_user.textContent = event.target.value;
+  congratulationUser.textContent = event.target.value;
 });
 
 // вместо стайл дисплей сделать по классам все
 
 document.getElementById('btn-back').addEventListener('click', () => {
-  document.querySelector('.letter').style.display = 'none';
-  document.querySelector('.send_pay_tw').style.display = 'none';
+  blockDisplayChange.forEach(element => {
+    element.classList.remove('display-flex');  
+  });
 
-  block_buttons.forEach(element => {
+  blockButtons.forEach(element => {
     element.classList.remove('display-none');
   });
 });
@@ -52,39 +53,35 @@ choice.addEventListener('click', () => {
     alert('Нужно что нибудь ввести');
   } else {
     send_pay__number.textContent = num;
-
     total.textContent = dataValueContent * num;
-
     let resultNum = Number(result.textContent);
-
     resultNumber = resultNum;
-
     changeButton(choice, 'Отправить и опратить', 'send-btn');
     changeButton(choiceGift, 'Вернуться назад', 'back-btn');
-
     choiceGift.classList.remove('send-gift-btn');
 
     certificateAndWork.forEach(element => {
       element.style.display = 'none';
     });
-    send_pay.style.display = 'flex';
+    sendPayButton.style.display = 'flex';
   }
 });
 
-send_gift_btn.addEventListener('click', () => {
+sendGiftButton.addEventListener('click', () => {
   if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
     return;
-  } else if (send_gift_btn.classList.contains('send-gift-btn')) {
+  } else if (sendGiftButton.classList.contains('send-gift-btn')) {
     counting__number.textContent = num;
     total_send.textContent = dataValueContent * num;
 
     let resultNum_send = Number(result_send.textContent);
     resultNumber_send = resultNum_send;
 
-    document.querySelector('.letter').style.display = 'flex';
-    document.querySelector('.send_pay_tw').style.display = 'flex';
+    blockDisplayChange.forEach(element => {
+      element.classList.add('display-flex')
+    });
 
-    block_buttons.forEach(element => {
+    blockButtons.forEach(element => {
       element.classList.add('display-none');
     });
   }
@@ -104,6 +101,6 @@ choiceGift.addEventListener('click', event => {
     certificateAndWork.forEach(element => {
       element.style.display = 'flex';
     });
-    send_pay.style.display = 'none';
+    sendPayButton.style.display = 'none';
   }
 });
