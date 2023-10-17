@@ -52,12 +52,16 @@ choice.addEventListener('click', () => {
   if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
     alert('Нужно что нибудь ввести');
   } else {
-    send_pay__number.textContent = num;
-    total.textContent = dataValueContent * num;
+
     let resultNum = Number(result.textContent);
-    resultNumber = resultNum;
+
     changeButton(choice, 'Отправить и опратить', 'send-btn');
     changeButton(choiceGift, 'Вернуться назад', 'back-btn');
+
+    sendPayNumber.textContent = num;
+    total.textContent = dataValueContent * num;
+
+    resultNumber = resultNum;
     choiceGift.classList.remove('send-gift-btn');
 
     certificateAndWork.forEach(element => {
@@ -71,7 +75,7 @@ sendGiftButton.addEventListener('click', () => {
   if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
     return;
   } else if (sendGiftButton.classList.contains('send-gift-btn')) {
-    counting__number.textContent = num;
+    countingNumber.textContent = num;
     total_send.textContent = dataValueContent * num;
 
     let resultNum_send = Number(result_send.textContent);
