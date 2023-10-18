@@ -57,6 +57,10 @@
   .about__text-content p {
     font-size: 15px;
   }
+
+  .download-certificate {
+    margin: 70px 0 0 0;
+  }
 }
 
 @media only screen and (max-width: 989px) {
@@ -226,10 +230,6 @@
 
   .img_decor {
     display: none;
-  }
-
-  .certificate .right {
-    margin: 70px 0 0 0;
   }
 
   .why-we {

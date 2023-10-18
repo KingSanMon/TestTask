@@ -473,7 +473,7 @@ body::-webkit-scrollbar {
   background: #f1a501;
 }
 
-.work .information-works .info {
+.work__info-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,25 +488,25 @@ body::-webkit-scrollbar {
 }
 
 .rectangle,
-.info-text,
-.info-text h3 {
+.information-works__info-text,
+.info-text__title {
   transition: 0.5s ease;
 }
 
-.work .information-works .info:hover .rectangle {
+.work__info-block:hover .rectangle {
   opacity: 0;
   transform: translateY(-20px);
 }
 
-.work .information-works .info:hover .info-text {
+.work__info-block:hover .information-works__info-text {
   transform: translateY(-40px);
 }
 
-.work .information-works .info:hover .info-text h3 {
+.info-text__title {
   font-size: 22px;
 }
 
-.work .information-works .rectangle {
+.rectangle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,22 +517,22 @@ body::-webkit-scrollbar {
   background: #fff1da;
 }
 
-.work .information-works .rectangle h1 {
+.rectangle__number {
   font-size: 30px;
 }
 
-.work .information-works .info .info-text {
+.information-works__info-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 3.63rem;
 }
 
-.work .information-works .info .info-text h3 {
+.info-text__title {
   font-size: 20px;
 }
 
-.work .information-works .info .info-text p {
+.information-works__text {
   margin-top: 0.88rem;
   text-align: center;
   color: rgba(11, 11, 12, 0.64);
@@ -548,7 +548,12 @@ body::-webkit-scrollbar {
   margin-top: 17.19rem;
 }
 
-.certificate .left h1 {
+.certificate__description {
+  max-width: 564px;
+  width: auto;
+}
+
+.certificate__title {
   font-size: 2.625rem;
 }
 
@@ -558,30 +563,29 @@ body::-webkit-scrollbar {
   margin-top: 2.5rem;
 }
 
-.certificate .left .info-text {
+.certificate__description-style {
   margin-left: 1.31rem;
 }
 
-.certificate .left .info-text h3 {
-  color: rgba(14, 14, 15, 0.64);
+.certificate__description-tytle {
+  color: rgb(78, 78, 78);
   font-size: 1rem;
 }
 
-.certificate .left .info-text p {
+.text-style__certificate {
   color: rgba(14, 14, 15, 0.64);
   font-size: 1rem;
+  max-width: 440px;
+  width: auto;
 }
 
-.certificate .right {
+.download-certificate {
   padding: 25px;
   width: 27.25rem;
   height: 29.5rem;
   border-radius: 1.625rem;
   background: #fff;
-  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
-    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 10px 20px rgb(128, 128, 128);
 }
 
 .certificate .right img {
