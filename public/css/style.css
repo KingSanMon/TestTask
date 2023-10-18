@@ -142,10 +142,7 @@ body::-webkit-scrollbar {
   height: 254px;
   border-radius: 36px;
   background: #fff;
-  box-shadow: 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
-    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
-    0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 19px #979797;
 }
 
 .about__toggle-nominal {
@@ -588,7 +585,7 @@ body::-webkit-scrollbar {
   box-shadow: 0px 10px 20px rgb(128, 128, 128);
 }
 
-.certificate .right img {
+.image__certificate {
   margin-top: 2.25rem;
 }
 
@@ -599,7 +596,7 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
-.certificate .right p {
+.certificate .download-certificate p {
   font-size: 1rem;
   color: rgba(10, 10, 13, 0.64);
 }

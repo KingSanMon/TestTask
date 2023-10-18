@@ -57,9 +57,11 @@
   .about__text-content p {
     font-size: 15px;
   }
+}
 
+@media only screen and (max-width: 1000px) {
   .download-certificate {
-    margin: 70px 0 0 0;
+    margin: 50px 0 0 0;
   }
 }
 
@@ -169,9 +171,9 @@
     height: auto;
   }
 
-  .img__sertificate img {
+  .sertificate-preview__image {
     width: 385px;
-    height: 260px;
+    height: auto;
   }
 }
 
@@ -247,13 +249,41 @@
   .conditions .left {
     width: 413px;
   }
+
+  .information_user {
+    width: 420px;
+    max-height: 920px;
+  }
+  
+  .block_frame {
+    min-height: 48px;
+  }
+
+  .send_pay_tw-size-s {
+    width: 160px;
+  }
+
+  .quantity-gift {
+    padding: 0;
+  }
+
+  .send {
+    width: 100%;
+  }
+
+  .send-gift, .back-btn__send_gift {
+    width: 100%;
+  }
+
+  .btn-send-gift {
+    gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 440px) {
   .about,
   .food__img,
   .certificate,
-  .image__certificate,
   .conditions,
   .why-we {
     width: 320px;
@@ -270,10 +300,14 @@
     margin: 0;
   }
 
-  .certificate .right {
+  .image__certificate {
+    width: 270px;
+  }
+
+  .download-certificate {
     width: 320px;
     height: 373px;
-    padding: 0;
+    padding: 25px;
   }
 
   .conditions .right {
@@ -290,5 +324,29 @@
   .header .logo {
     width: 100px;
     height: 24px;
+  }
+
+  .letter_preview .food {
+    width: 320px;
+  }
+
+  .sertificate-preview__image {
+    width: 260px;
+  }
+
+  .information_user {
+    width: 320px;
+  }
+
+  .send_pay_tw-size-s {
+    width: 100%;
+  }
+
+  .counting {
+    gap: 10px;
+  }
+
+  .block_frame__delete-size-s {
+    display: none;
   }
 }
