@@ -349,4 +349,14 @@
   .block_frame__delete-size-s {
     display: none;
   }
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .letter_preview {
+    display: flex;
+    justify-content: center;
+  }
 }
