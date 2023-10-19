@@ -93,6 +93,10 @@
   .decore-rectangle {
     display: none;
   }
+
+  .alips {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 848px) {
@@ -127,6 +131,10 @@
     height: 34px;
   }
 
+  .header-size-s {
+    background: #bf9004;
+  }
+
   .navigation {
     display: none;
   }
@@ -142,6 +150,10 @@
   .header {
     width: 100%;
     padding: 20px 3%;
+  }
+
+  .logo {
+    margin: 0 0 0 60px;
   }
 
   .navbar.open .navigation {
@@ -289,6 +301,10 @@
     width: 320px;
   }
 
+  .letter__title {
+    text-align: center;
+  }
+
   .about__send-sertificate .about__buttons {
     width: 320px;
     height: auto;
@@ -319,11 +335,6 @@
 
   .work .decore-rectangle {
     display: none;
-  }
-
-  .header .logo {
-    width: 100px;
-    height: 24px;
   }
 
   .letter_preview .food {

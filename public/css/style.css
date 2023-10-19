@@ -587,6 +587,8 @@ body::-webkit-scrollbar {
 
 .image__certificate {
   margin-top: 2.25rem;
+  max-width: 385px;
+  width: auto;
 }
 
 .congratulation {
@@ -627,10 +629,10 @@ body::-webkit-scrollbar {
   color: rgba(11, 11, 12, 0.64);
 }
 
-.conditions .terms-use__instructions {
+.terms-use__instructions {
   padding: 30px;
-  width: 31.5rem;
-  height: 16.3125rem;
+  width: 500px;
+  height: 265px;
   border-radius: 0.625rem;
   background: #fff;
   box-shadow: 0px 15px 10px rgb(176, 176, 176);
