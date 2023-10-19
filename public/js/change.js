@@ -65,9 +65,9 @@ choice.addEventListener('click', () => {
     choiceGift.classList.remove('send-gift-btn');
 
     certificateAndWork.forEach(element => {
-      element.style.display = 'none';
+      element.classList.add('display-none');
     });
-    sendPayButton.style.display = 'flex';
+    sendPayButton.classList.add('display-flex');
   }
 });
 
@@ -103,8 +103,8 @@ choiceGift.addEventListener('click', event => {
     choiceGift.classList.add('send-gift-btn');
 
     certificateAndWork.forEach(element => {
-      element.style.display = 'flex';
+      element.classList.remove('display-none');
     });
-    sendPayButton.style.display = 'none';
+    sendPayButton.classList.remove('display-flex');
   }
 });
