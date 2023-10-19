@@ -596,7 +596,12 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
-.certificate .download-certificate p {
+.download-certificate__text-block {
+  display: flex;
+  gap: 30px;
+}
+
+.download-certificate__text-content {
   font-size: 1rem;
   color: rgba(10, 10, 13, 0.64);
 }
@@ -607,36 +612,34 @@ body::-webkit-scrollbar {
   justify-content: space-around;
 }
 
-.conditions .left h1 {
+.terms-use__title {
   font-size: 2.625rem;
+  margin: 0 0 20px 0;
 }
 
-.conditions .left p {
+.conditions__terms-use {
+  max-width: 520px;
+  width: auto;
+}
+
+.terms-use__description {
   font-size: 1rem;
   color: rgba(11, 11, 12, 0.64);
 }
 
-.conditions .right {
+.conditions .terms-use__instructions {
   padding: 30px;
   width: 31.5rem;
   height: 16.3125rem;
   border-radius: 0.625rem;
   background: #fff;
-  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
-    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 10px rgb(176, 176, 176);
 }
 
-.conditions .right p {
+.instructions__text-content {
   font-size: 1rem;
   color: rgba(11, 11, 12, 0.64);
   line-height: 2.2rem;
-}
-
-.conditions .right p span {
-  font-weight: 600;
 }
 
 /* Блока почему мы */
@@ -648,40 +651,37 @@ body::-webkit-scrollbar {
   margin-top: 17.44rem;
 }
 
-.why-we h1 {
+.why-we__title {
   font-size: 2.625rem;
 }
 
-.why-we .blocks {
+.why-we__content {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
   gap: 3rem;
 }
 
-.why-we .blocks .wimg {
+.why-we__content-menu {
   overflow: hidden;
   width: 19.625rem;
   height: 24rem;
   border-radius: 1.5rem;
-  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
-    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
-    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
-    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 15px 15px rgb(206, 206, 206);
 }
 
-.why-we .blocks .wimg img {
+.wimg__image {
   width: 100%;
   border-radius: 1.5rem 1.5rem 0rem 0rem;
   height: 17rem;
   transition: transform 0.3s ease;
 }
 
-.why-we .blocks .wimg img:hover {
+.wimg__image:hover {
   transform: scale(1.2);
 }
 
-.why-we .blocks .wimg .info {
+.why-we__text-block {
   position: relative;
   padding: 1rem 0 0 0;
   height: 100%;
@@ -689,7 +689,7 @@ body::-webkit-scrollbar {
   top: -7px;
 }
 
-.why-we .blocks .wimg p {
+.why-we__text-content {
   font-size: 1.125rem;
   color: rgba(11, 11, 12, 0.64);
   margin: 0 0 0 1rem;

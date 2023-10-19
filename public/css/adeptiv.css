@@ -242,11 +242,11 @@
     height: 25rem;
   }
 
-  .conditions .right {
+  .terms-use__instructions {
     width: 415px;
   }
 
-  .conditions .left {
+  .conditions__terms-use {
     width: 413px;
   }
 
@@ -310,7 +310,7 @@
     padding: 25px;
   }
 
-  .conditions .right {
+  .conditions .terms-use__instructions {
     width: 300px;
     height: auto;
     padding: 14px;
