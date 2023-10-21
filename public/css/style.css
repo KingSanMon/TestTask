@@ -204,6 +204,46 @@ body::-webkit-scrollbar {
   margin: 0 6px 0 6px;
 }
 
+.modal-block {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #000000a6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+.modal-window {
+  max-width: 430px;
+  width: auto;
+  min-height: 200px;
+  height: auto;
+  background: #fefefe;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.modal-window__close-modal {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.close-modal {
+  cursor: pointer;
+  width: 30px;
+}
+
+.modal-window__text-content {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
 /* Изменение блока после крика отправить себе */
 .btn-block-update {
   margin-top: 40px;

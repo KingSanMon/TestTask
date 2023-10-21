@@ -16,6 +16,9 @@ const blockButtons = document.querySelectorAll('.about__buttons, .condition, .wo
 const certificateAndWork = document.querySelectorAll('.about__toggle-nominal, .about__quantity-input');
 const blockDisplayChange = document.querySelectorAll('.letter, .send_pay_tw');
 
+const closeModal = document.querySelector('.close-modal');
+const modalBlock = document.querySelector('.modal-block');
+
 let resultNumber;
 
 function changeButton(element, text, className) {
@@ -48,9 +51,13 @@ document.getElementById('btn-back').addEventListener('click', () => {
   });
 });
 
+closeModal.addEventListener('click', () => {
+  modalBlock.classList.add('display-none');
+});
+
 choice.addEventListener('click', () => {
   if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
-    alert('Нужно что нибудь ввести');
+    modalBlock.classList.remove('display-none');
   } else {
 
     let resultNum = Number(result.textContent);
@@ -93,7 +100,7 @@ sendGiftButton.addEventListener('click', () => {
 
 choiceGift.addEventListener('click', event => {
   if ((inputNominal.value === '') & (document.querySelector('.toggle-nominal.active') === null)) {
-    alert('Нужно заполнить хоть какое то поле');
+    modalBlock.classList.remove('display-none');
   } else if (event.target.classList.contains('back-btn')) {
     number.textContent = num;
 
